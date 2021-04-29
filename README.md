@@ -3,6 +3,8 @@
 	<h1 align="center">IES IEDC</h1>
 </p>
 
+[![Jekyll CI](https://github.com/iesdevs/iedc/actions/workflows/jekyll.yml/badge.svg)](https://github.com/iesdevs/iedc/actions/workflows/jekyll.yml)
+
 IES IEDC portfolio. Visit: https://iesdevs.github.io/iedc/
 
 ### How to contribute:
