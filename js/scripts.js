@@ -56,15 +56,15 @@
     // Scroll to top button action
     $(document).ready(function () {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 20) {
-                $('#toTopBtn').fadeIn();
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
             } else {
-                $('#toTopBtn').fadeOut();
+                $('#back-to-top').fadeOut();
             }
         });
-
-        $('#toTopBtn').click(function () {
-            $("html, body").animate({
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('body,html').animate({
                 scrollTop: 0
             }, 1000);
             return false;
