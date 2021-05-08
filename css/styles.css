@@ -10916,6 +10916,37 @@ header.masthead .masthead-heading {
   height: 7rem;
 }
 
+#toTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 90;
+  padding: 3px;
+  background-color: transparent;
+}
+
+.js .cd-top--fade-out {
+  opacity: 0.5;
+}
+
+.js .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.js .cd-top {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
+}
+
+.cd-top {
+  position: center fixed;
+  color: rgba(92, 92, 92, 0.800);
+  width: var(--cd-back-to-top-size);
+  background: no-repeat center 100%;
+}
+
 section#contact {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");

@@ -53,4 +53,22 @@
     // Collapse the navbar when page is scrolled
     $(window).on('scroll', navbarCollapse);
 
+    // Scroll to top button action
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 20) {
+                $('#toTopBtn').fadeIn();
+            } else {
+                $('#toTopBtn').fadeOut();
+            }
+        });
+
+        $('#toTopBtn').click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });
+    });
+
 })(jQuery); // End of use strict
