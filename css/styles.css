@@ -10917,6 +10917,10 @@ header.masthead .masthead-heading {
   height: 7rem;
 }
 
+a.iedc-footer-credit {
+  color: black;
+}
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
