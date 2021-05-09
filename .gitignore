@@ -101,6 +101,8 @@ Thumbs.db
 *.key
 *.pem
 
+# ignore vscode workspace settings
+.vscode/
 
 # --------------------------------------------------------
 # BEGIN Explictly Allowed Files (i.e. do NOT ignore these)
