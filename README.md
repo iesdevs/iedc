@@ -13,4 +13,4 @@ IES IEDC portfolio. Visit: <https://iesdevs.github.io/iedc/>
 2. Add your creativity ✨
 3. Create a 🚪 pull request
 
-*NB: The license applies to the website's source code. Contents hosted on the website are sole property of IES IEDC unless otherwise specified.*
+*NB: The license applies to the website's source code. Contents hosted on the website are sole property of IES IEDC unless specified otherwise.*
