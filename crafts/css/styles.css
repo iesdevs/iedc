@@ -1,0 +1,73 @@
+body {
+  background: #00b09b;
+  background: -webkit-linear-gradient(to right, #00b09b, #96c93d);
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  min-height: 100vh;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+.card-image-top{
+    height: 2vh;
+    width: auto;
+}
+
+
+.animated-btn {
+    transform: scale(0.7);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    display: inline-block;
+    text-align: center;
+    background: #ff3f3f;
+    position: relative;
+    z-index: 2;
+}
+
+.animated-btn::before, .animated-btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: rgba(255, 63, 63, 0.8);
+    animation: ripple-1 2s infinite ease-in-out;
+    z-index: -1;
+}
+
+.animated-btn::after {
+    background: rgba(255, 63, 63, 0.6);
+    animation: ripple-2 2s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+
+@keyframes ripple-1 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple-2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
