@@ -45,10 +45,13 @@
      <meta name="twitter:description" property="twitter:description"
          content="Innovate, Inspire, Educate, Repeat. Welcome to the official website of IES IEDC, we're excited to have you with us in an adventurous journey ahead!">
      <meta name="twitter:image" property="twitter:image" content="assets/img/logos/ies-iedc-logo-meta.jpg">
+
+     <!--Other-->
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top" style="border-bottom: 1px solid #DADCE0;">
+    
+    <!--Nvbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top nav">
       <div class="container">
 
           <a class="navbar-brand fw-bold fs-6"><span class="d-block line-height-sm" style="color: rgb(0, 255, 149);">IEDC</span><strong style="color: rgb(46, 131, 243);">CRAFTS</strong></a>
@@ -67,7 +70,10 @@
         
       </div>
     </nav>
+
+
     
+    <!--Front Cover-->
     <div class="bg-light" style="height: 100vh;">
       <div class="container py-5">
         <div class="row h-100 align-items-center py-5">
@@ -81,14 +87,18 @@
               Here are some crafted products made with ❤️ by Iedc crafts.
             </p><br>
               <!-- Animated button -->
-              <ul class="list-inline">
-                <a class="animated-btn text-white list-inline-item"><i class="fa fa-play"></i></a>
-                <div class="list-inline-item">
-                    <span class="text-muted d-block line-height-sm">Watch</span><strong class="text-uppercase text-dark">Intro Video</strong>
+              <div class="media d-flex align-items-center">
+                <a class="animated-btn text-white"   data-toggle="modal" data-target="#intro-modal"><i class="fa fa-play"></i></a>
+                <div class="media-body m-2">
+                  <p class="font-weight-light text-muted mb-0">Watch</p>
+                  <strong class="m-0 text-uppercase text-dark">Intro Video</strong>
                 </div>
-              </ul>
+              </div>
+
+
+
           </div>
-          <div class="col-lg-6 d-none d-lg-block" style="margin-right: 0;padding-left: 112px;"><img src="assets/img/iedc-crafts.png" alt="" class="img-fluid"></div>
+          <div class="col-lg-6 d-none d-lg-block" style="margin-right: 0;padding-left: 112px;"><img src="assets/img/iedc-crafts.svg" alt="" class="img-fluid"></div>
         </div>
       </div>
     </div>
@@ -100,21 +110,23 @@
           <div class="col-lg-8 mx-auto">
             <div class="bg-white p-5 rounded shadow">
             <!-- First Row [Statistics]-->
-            <h2 class="font-weight-bold mb-2">Latest Statistics</h2>
-            <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            <h2 class="fs-1 fw-bold mb-2 text-center" style="text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);">Latest Statistics</h2>
+            <p class="font-italic text-muted mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             
         
         
             <div class="row row-cols-1 row-cols-md-3 g-4">
-        
+              <!--Statistics Cards-->
               <div class="col">
-                <div class="card h-100 rounded shadow-sm border-0">
+                <div class="card h-100 rounded border-0">
         
-                    <div class="card-body p-5"><i class="fa fa-tasks fa-2x mb-3 text-success"></i>
-                        <h5>Products Sales</h5>
-        
-                        <div class="progress rounded-pill">
-                            <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;" class="progress-bar bg-success rounded-pill"></div>
+                    <div class="card-body p-5">
+                        <div class="media d-flex align-items-center">
+                          <i class="fa fa-tasks mb-3 text-success" style="font-size: 90px;position: relative;top: 10px;"></i>
+                          <div class="media-body m-2">
+                            <h2 class="m-0 fw-bold" style="text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);">1023</h2>
+                            <p class="font-weight-light text-muted mb-0">Products Sales</p>
+                          </div>
                         </div>
                     </div>
         
@@ -122,55 +134,83 @@
               </div>
         
         
+
               <div class="col">
-                <div class="card h-100 rounded shadow-sm border-0">
+                <div class="card h-100 rounded border-0">
         
-                  <div class="card-body p-5"><i class="fa fa-user fa-2x mb-3 text-info"></i>
-                    <h5>New Users</h5>
-        
-                    <div class="progress rounded-pill">
-                        <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;" class="progress-bar bg-info rounded-pill"></div>
+                    <div class="card-body p-5">
+                        <div class="media d-flex align-items-center">
+                          <i class="fa fa-user mb-3 text-info" style="font-size: 90px;position: relative;top: 10px;"></i>
+                          <div class="media-body m-2">
+                            <h2 class="m-0 fw-bold" style="text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);">1234</h2>
+                            <p class="font-weight-light text-muted mb-0">New Users</p>
+                          </div>
+                        </div>
                     </div>
-                </div>
-        
-                </div>
-              </div>
-        
-        
-              <div class="col">
-                <div class="card h-100 rounded shadow-sm border-0">
-        
-                  <div class="card-body p-5"><i class="fa fa-shopping-bag fa-2x mb-3 text-warning"></i>
-                    <h5>New Products</h5>
-        
-                    <div class="progress rounded-pill">
-                        <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;" class="progress-bar bg-warning rounded-pill"></div>
-                    </div>
-                </div>
         
                 </div>
               </div>
         
     
-              
-      
+              <div class="col">
+                <div class="card h-100 rounded border-0">
+        
+                    <div class="card-body p-5">
+                        <div class="media d-flex align-items-center">
+                          <i class="fa fa-shopping-bag mb-3 text-warning" style="font-size: 90px;position: relative;top: 10px;"></i>
+                          <div class="media-body m-2">
+                            <h2 class="m-0 fw-bold" style="text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);">123</h2>
+                            <p class="font-weight-light text-muted mb-0">New Products</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div id="products"></div>
+                </div>
+              </div>       
+
             </div>
           </div>
         </div>
     </div>
   
 
-        <header class="text-center mb-5" id="products">
-          <p class="fs-1 fw-bold text-white">Our Products</p>
-       </header>
 
-  
+
+<div class="bg-white p-5 rounded shadow">
+      <!--Product Header-->
+       <nav class="navbar justify-content-between">
+        <header class="navbar-brand">
+          <p class="fs-1 fw-bold" style="text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);">Products</p>
+       </header>
+        <form class="form-inline">
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </form>
+      </nav>
+      <div class="progress rounded-pill" style="position: relative; bottom:15px">
+        <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 100%;" class="progress-bar bg-light rounded-pill"></div>
+      </div>
+      
+  <!--Product Cards-->
   <div class="row row-cols-1 row-cols-md-4 g-4">
 
 
-
+  
   <div class="col">
-    <div class="card h-100 bg-white p-4 rounded shadow">
+    <div class="card h-100 bg-white p-4 rounded shadow-sm">
       <img class="card-img-top" src="assets\img\craft.jpg" alt="Card image cap">
       <div class="card-body text-center">
         <h5>A Craft Product</h5>
@@ -188,7 +228,7 @@
   </div>
 
   <div class="col">
-    <div class="card h-100 bg-white p-4 rounded shadow">
+    <div class="card h-100 bg-white p-4 rounded shadow-sm">
       <img class="card-img-top" src="assets\img\craft.jpg" alt="Card image cap">
       <div class="card-body text-center">
         <h5>A Craft Product</h5>
@@ -206,7 +246,7 @@
   </div>
 
   <div class="col">
-    <div class="card h-100 bg-white p-4 rounded shadow">
+    <div class="card h-100 bg-white p-4 rounded shadow-sm">
       <img class="card-img-top" src="assets\img\craft.jpg" alt="Card image cap">
       <div class="card-body text-center">
         <h5>A Craft Product</h5>
@@ -224,7 +264,7 @@
   </div>
 
   <div class="col">
-    <div class="card h-100 bg-white p-4 rounded shadow">
+    <div class="card h-100 bg-white p-4 rounded shadow-sm">
       <img class="card-img-top" src="assets\img\craft.jpg" alt="Card image cap">
       <div class="card-body text-center">
         <h5>A Craft Product</h5>
@@ -242,7 +282,7 @@
   </div>
 
   <div class="col">
-    <div class="card h-100 bg-white p-4 rounded shadow">
+    <div class="card h-100 bg-white p-4 rounded shadow-sm">
       <img class="card-img-top" src="assets\img\craft.jpg" alt="Card image cap">
       <div class="card-body text-center">
         <h5>A Craft Product</h5>
@@ -260,7 +300,7 @@
   </div>
 
   <div class="col">
-    <div class="card h-100 bg-white p-4 rounded shadow">
+    <div class="card h-100 bg-white p-4 rounded shadow-sm">
       <img class="card-img-top" src="assets\img\craft.jpg" alt="Card image cap">
       <div class="card-body text-center">
         <h5>A Craft Product</h5>
@@ -278,7 +318,7 @@
   </div>
 
   <div class="col">
-    <div class="card h-100 bg-white p-4 rounded shadow">
+    <div class="card h-100 bg-white p-4 rounded shadow-sm">
       <img class="card-img-top" src="assets\img\craft.jpg" alt="Card image cap">
       <div class="card-body text-center">
         <h5>A Craft Product</h5>
@@ -297,7 +337,7 @@
 
 
   <div class="col">
-    <div class="card h-100 bg-white p-4 rounded shadow">
+    <div class="card h-100 bg-white p-4 rounded shadow-sm">
       <img class="card-img-top" src="assets\img\craft.jpg" alt="Card image cap">
       <div class="card-body text-center">
         <h5>A Craft Product</h5>
@@ -314,19 +354,37 @@
     </div>
   </div>
   
-
-
+</div>
 
 </div>
-        
-  
+
+
+
+        <!--MODALS-->
+          <!-- Modal Intro Video-->
+          <div class="modal fade" id="intro-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-xl  modal-dialog-centered" role="document">
+              <div class="modal-content" style="background: none;border: none;">
+                <div class="modal-body" style="border-radius: 5px;margin-top: 50px;padding: 0;">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" style="height: 70vh;width: 100%;" src="https://www.youtube.com/embed/zBf7DOtWRP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  
+                </div>
+                <div class="modal-footer" style="border:none;position:relative;left: 15px;">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background: #ff3f3f;">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
   
         <!-- Modal 1-->
         <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-xl modal-dialog-scrollable  modal-dialog-centered" role="document">
             <div class="modal-content">
 
-              <div class="modal-body">
+              <div class="modal-body" id="scroller">
 
                 <div class="row no-gutters">
                   <div class="col-md-4">
@@ -378,14 +436,28 @@
                             <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
                         </ul>
 
-                        <div class="py-4 px-3 mb-4 bg-light">
-                          <div class="media d-flex align-items-center"><img src="assets/img/craft.jpg" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+                        <nav class="navbar navbar-light bg-light justify-content-between py-4 px-3">
+                          <div class="media d-flex align-items-center">
+
+                            <img src="assets/img/craft.jpg" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
                             <div class="media-body m-2">
-                              <h4 class="m-0">Noice Name</h4>
                               <p class="font-weight-light text-muted mb-0">Creator</p>
+                              <strong class="m-0 text-uppercase text-dark">Noice Name</strong>
                             </div>
+                            
                           </div>
-                        </div>
+                          <form class="form-inline">
+                            <div class="media d-flex align-items-center">
+
+                              <div class="media-body m-2">
+                                <p class="font-weight-light text-muted mb-0" style="position: relative;left: 85px;">Watch</p>
+                                <strong class="m-0 text-uppercase text-dark" style="position: relative;left: 6px;">Product Video</strong>
+                              </div>
+                              <a class="animated-btn text-white"  href="https://www.youtube.com/watch?v=XL0bpimIPwc" rel="noopener noreferrer" target="_blank"><i class="fa fa-play"></i></a>
+                              
+                            </div>
+                          </form>
+                        </nav>
 
                     </div>
                   </div>
@@ -527,14 +599,16 @@
         </div>
   
       </div>
+
+      
   
   
-      <!-- Footer-->
+    <!-- Footer-->
     <div class="bg-light py-4">
       <div class="container text-center">
         <div class="row align-items-center">
           <div class="col-lg-4 text-lg-left">
-              Copyright &copy; <a href="../index.html" style="text-decoration: none;color: rgb(0, 255, 149);;">IES IEDC</a>
+              Copyright &copy; <a href="../../index.html" style="text-decoration: none;color: rgb(0, 255, 149);;">IES IEDC</a>
               <!-- This script automatically adds the current year to your website footer-->
               <!-- (credit: https://updateyourfooter.com/)-->
               <script>
@@ -560,10 +634,19 @@
     </div>
   </footer>
 <!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <script>
+    window.addEventListener('scroll',(e)=>{
+      const nav = document.querySelector('.nav');
+      if(window.pageYOffset>0){
+        nav.classList.add("add-shadow");
+      }else{
+        nav.classList.remove("add-shadow");
+      }
+    });
+  </script>
   </body>
 </html>
