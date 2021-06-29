@@ -13,6 +13,15 @@ body {
     height: 2vh;
     width: auto;
 }
+@media screen and (max-width: 992px) {
+  .intro-video{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 
 /*Videa play button + animation*/
 .animated-btn {
@@ -77,9 +86,11 @@ body {
 /*Navbar shadow*/
 .add-shadow
 {
-    border-bottom: 1px solid #dadce081;
+  box-shadow: 0 0 2.5px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 500ms;
 
 }
+
 
 /*Custom scroller*/
 /* width */
@@ -102,3 +113,7 @@ body {
   #scroller::-webkit-scrollbar-thumb:hover {
     background: rgb(201, 201, 201);
   }
+
+.custom-font{
+ text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);
+}

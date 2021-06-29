@@ -47,6 +47,8 @@
      <meta name="twitter:image" property="twitter:image" content="assets/img/logos/ies-iedc-logo-meta.jpg">
 
      <!--Other-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     
@@ -54,7 +56,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top nav">
       <div class="container">
 
-          <a class="navbar-brand fw-bold fs-6"><span class="d-block line-height-sm" style="color: rgb(0, 255, 149);">IEDC</span><strong style="color: rgb(46, 131, 243);">CRAFTS</strong></a>
+          <a class="navbar-brand fw-bold fs-6"><span class="d-block line-height-sm nav-head" style="color: rgb(0, 255, 149);">IEDC </span><strong style="color: rgb(46, 131, 243);">CRAFTS</strong></a>
           <div class="d-flex">
             <div class="p-1 bg-light rounded rounded-pill shadow-sm">
               <div class="input-group">
@@ -87,8 +89,8 @@
               Here are some crafted products made with ❤️ by Iedc crafts.
             </p><br>
               <!-- Animated button -->
-              <div class="media d-flex align-items-center">
-                <a class="animated-btn text-white"   data-toggle="modal" data-target="#intro-modal"><i class="fa fa-play"></i></a>
+              <div class="d-flex align-items-center intro-video">
+                <a class="animated-btn text-white" data-toggle="modal" data-target="#intro-modal"><i class="fa fa-play"></i></a>
                 <div class="media-body m-2">
                   <p class="font-weight-light text-muted mb-0">Watch</p>
                   <strong class="m-0 text-uppercase text-dark">Intro Video</strong>
@@ -102,7 +104,6 @@
         </div>
       </div>
     </div>
-
   
       <div class="container py-5">
 
@@ -110,7 +111,7 @@
           <div class="col-lg-8 mx-auto">
             <div class="bg-white p-5 rounded shadow">
             <!-- First Row [Statistics]-->
-            <h2 class="fs-1 fw-bold mb-2 text-center" style="text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);">Latest Statistics</h2>
+            <h2 class="fs-1 fw-bold mb-2 text-center custom-font">Latest Statistics</h2>
             <p class="font-italic text-muted mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             
         
@@ -118,13 +119,15 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <!--Statistics Cards-->
               <div class="col">
-                <div class="card h-100 rounded border-0">
+                <div class="card h-100 rounded border-0" id="scroll-to">
         
                     <div class="card-body p-5">
                         <div class="media d-flex align-items-center">
-                          <i class="fa fa-tasks mb-3 text-success" style="font-size: 90px;position: relative;top: 10px;"></i>
+                          <span class="material-icons mb-3" style="font-size: 90px;position: relative;top: 10px;color: rgb(99, 236, 110);">
+                            fact_check
+                          </span>
                           <div class="media-body m-2">
-                            <h2 class="m-0 fw-bold" style="text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);">1023</h2>
+                            <h2 class="m-0 fw-bold counter custom-font" value="2134">0</h2>
                             <p class="font-weight-light text-muted mb-0">Products Sales</p>
                           </div>
                         </div>
@@ -140,9 +143,11 @@
         
                     <div class="card-body p-5">
                         <div class="media d-flex align-items-center">
-                          <i class="fa fa-user mb-3 text-info" style="font-size: 90px;position: relative;top: 10px;"></i>
+                          <span class="material-icons mb-3" style="font-size: 90px;position: relative;top: 10px;color: rgb(201, 95, 250);">
+                            person_pin
+                          </span>
                           <div class="media-body m-2">
-                            <h2 class="m-0 fw-bold" style="text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);">1234</h2>
+                            <h2 class="m-0 fw-bold counter custom-font" value="1101">0</h2>
                             <p class="font-weight-light text-muted mb-0">New Users</p>
                           </div>
                         </div>
@@ -157,9 +162,11 @@
         
                     <div class="card-body p-5">
                         <div class="media d-flex align-items-center">
-                          <i class="fa fa-shopping-bag mb-3 text-warning" style="font-size: 90px;position: relative;top: 10px;"></i>
+                          <span class="material-icons mb-3" style="font-size: 90px;position: relative;top: 10px;color: rgb(91, 144, 243);">
+                            local_mall
+                          </span>
                           <div class="media-body m-2">
-                            <h2 class="m-0 fw-bold" style="text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);">123</h2>
+                            <h2 class="m-0 fw-bold counter custom-font" value="324">0</h2>
                             <p class="font-weight-light text-muted mb-0">New Products</p>
                           </div>
                         </div>
@@ -180,7 +187,7 @@
       <!--Product Header-->
        <nav class="navbar justify-content-between">
         <header class="navbar-brand">
-          <p class="fs-1 fw-bold" style="text-shadow: 3px 3px rgb(46, 131, 243);color: rgb(0, 255, 149);">Products</p>
+          <p class="fs-1 fw-bold custom-font">Products</p>
        </header>
         <form class="form-inline">
           <nav aria-label="...">
@@ -365,7 +372,7 @@
           <div class="modal fade" id="intro-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-xl  modal-dialog-centered" role="document">
               <div class="modal-content" style="background: none;border: none;">
-                <div class="modal-body" style="border-radius: 5px;margin-top: 50px;padding: 0;">
+                <div class="modal-body" style="border-radius: 5px;margin-top: 5vh;padding: 0;" id="yt-player">
 
                   <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" style="height: 70vh;width: 100%;" src="https://www.youtube.com/embed/zBf7DOtWRP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -633,20 +640,12 @@
       </div>
     </div>
   </footer>
+  
 <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script>
-    window.addEventListener('scroll',(e)=>{
-      const nav = document.querySelector('.nav');
-      if(window.pageYOffset>0){
-        nav.classList.add("add-shadow");
-      }else{
-        nav.classList.remove("add-shadow");
-      }
-    });
-  </script>
+  <script src="js/scripts.js"></script>
   </body>
 </html>
