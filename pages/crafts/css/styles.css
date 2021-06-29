@@ -14,7 +14,7 @@ body {
     width: auto;
 }
 
-
+/*Videa play button + animation*/
 .animated-btn {
     transform: scale(0.7);
     width: 80px;
@@ -26,6 +26,7 @@ body {
     background: #ff3f3f;
     position: relative;
     z-index: 2;
+    cursor: pointer;
 }
 
 .animated-btn::before, .animated-btn::after {
@@ -71,3 +72,33 @@ body {
         opacity: 0;
     }
 }
+
+
+/*Navbar shadow*/
+.add-shadow
+{
+    border-bottom: 1px solid #dadce081;
+
+}
+
+/*Custom scroller*/
+/* width */
+#scroller::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  #scroller::-webkit-scrollbar-track {
+    background: rgba(238, 238, 238, 0.507);
+  }
+   
+  /* Handle */
+  #scroller::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: rgb(201, 201, 201); 
+  }
+  
+  /* Handle on hover */
+  #scroller::-webkit-scrollbar-thumb:hover {
+    background: rgb(201, 201, 201);
+  }
