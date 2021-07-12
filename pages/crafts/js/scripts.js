@@ -45,6 +45,6 @@ $(window).scroll(function() {
 });
 
 
-$('#intro-modal').on('hidden.bs.modal', function () {
-      callPlayer('yt-player', 'stopVideo');
+$("#intro-modal").on('hidden.bs.modal', function (e) {
+  $(".embed-responsive-item").attr("src", $(".embed-responsive-item").attr("src"));
 });
