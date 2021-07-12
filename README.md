@@ -7,10 +7,39 @@
 
 IES IEDC portfolio. Visit: <https://iesdevs.github.io/iedc/>
 
-### How to contribute
+## How to contribute
 
 1. 🍴 Fork this repository
 2. Add your creativity ✨
 3. Create a 🚪 pull request
+
+---
+
+## Todo
+
+## About
+
+- [ ] Embedded Video (full size) above IED / side by side eg: <https://i.stack.imgur.com/w23rV.png>
+- [ ] Quote(s) can be made side by side with carrousel.
+
+## Portfolio
+
+- [ ] What to add and what not to add
+
+## Timeline
+
+- [ ] Get timeline from sir
+- [ ] Reveal into half /  Drop-view Links
+
+## Team
+
+- [ ] Insert hover / popup badges
+- [ ] Add team details
+
+## Contact Us
+
+- [ ] Implement a mail server
+
+---
 
 *NB: The license applies to the website's source code. Contents hosted on the website are sole property of IES IEDC unless specified otherwise.*
