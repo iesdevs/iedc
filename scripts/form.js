@@ -12,6 +12,7 @@ async function handleSubmit(event) {
         }
     }).then(response => {
         status.innerHTML = "Thanks for your submission!";
+        $('.toast').toast('show')
         form.reset()
     }).catch(error => {
         status.innerHTML = "Oops! There was a problem submitting your form"
