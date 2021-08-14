@@ -38,8 +38,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
 
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Core & Custom theme CSS (includes Bootstrap)-->
     <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/custom.css" rel="stylesheet" />
 
 
     <!--Bootstrap -->
@@ -94,33 +95,84 @@
                 <h3 class="section-subheading text-muted">Innovation &amp; Entrepreneurship Development Cell @ IESCE
                 </h3>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Innovation</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
+            <!-- Flip card -->
+            <div class="row d-flex align-items-center justify-content-center text-center">
+                <div id="btCarousel" class="carousel slide col-lg-4 text-center d-flex justify-content-center"
+                    data-ride="carousel" data-interval="5000">
+                    <div class="carousel-inner p-3">
+                        <ol class="carousel-indicators">
+                            <li data-target="#btCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#btCarousel" data-slide-to="1"></li>
+                            <li data-target="#btCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-item active">
+                            <div class="flip-card">
+                                <div id="card-inv" class="flip-card-inner">
+                                    <div class="flip-card-front d-flex align-items-center justify-content-center">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                            <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <h4 class="my-3 p-2">Innovation</h4>
+                                    </div>
+                                    <div class="flip-card-back d-flex align-items-center justify-content-center">
+                                        <p class="p-4 text-center">Innovation is the heartbeat of IES IEDC. We
+                                            encourage each and every student to come up with novel solutions to real
+                                            world problems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flip-card">
+                                <div id="card-dev" class="flip-card-inner">
+                                    <div class="flip-card-front d-flex align-items-center justify-content-center">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                            <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <h4 class="my-3 p-2">Development</h4>
+                                    </div>
+                                    <div class="flip-card-back d-flex align-items-center justify-content-center">
+                                        <p class="p-4 text-center">Translating ideas from paper to ground is a
+                                            challenging. We provide an apt atmosphere to advance, channelize and develop
+                                            students' ideas further.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flip-card">
+                                <div id="card-enp" class="flip-card-inner">
+                                    <div class="flip-card-front d-flex align-items-center justify-content-center">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                            <i class="fas fa-handshake fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <h4 class="my-3">Ventures</h4>
+                                    </div>
+                                    <div class="flip-card-back d-flex align-items-center justify-content-center">
+                                        <p class="p-4 text-center">With our platform, students have an upperhand on
+                                            networking and marketing. Thus helping them to launch brilliant startups.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control-prev" href="#btCarousel" role="button" data-slide="next"></a>
+                        <a class="carousel-control-next" href="#btCarousel" role="button" data-slide="prev"></a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Development</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
+                <!--Spacing/Padding-->
+                <div class="col-sm-1">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="px-4 p-3"></div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-handshake fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Entrepreneurship</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
+                <!--YT Embedded-->
+                <div class="col-lg embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jk6sz25OZgw"></iframe>
                 </div>
             </div>
         </div>
@@ -726,7 +778,8 @@
                         value="Send Message" />
                 </div>
             </form>
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 0; right: 0;">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+                style="position: absolute; top: 0; right: 0;">
                 <div class="toast-header">
                     <img src="..." class="rounded mr-2" alt="...">
                     <strong class="mr-auto">Email Status</strong>
