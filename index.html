@@ -38,8 +38,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
 
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Core & Custom theme CSS (includes Bootstrap)-->
     <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/custom.css" rel="stylesheet" />
 
 
     <!--Bootstrap -->
@@ -94,35 +95,95 @@
                 <h3 class="section-subheading text-muted">Innovation &amp; Entrepreneurship Development Cell @ IESCE
                 </h3>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Innovation</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
+            <!-- Flip card -->
+            <div class="row text-center d-flex align-items-center justify-content-center">
+                <div class="col-lg-5 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front d-flex align-items-center justify-content-center">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Innovation</h4>
+                        </div>
+                        <div class="flip-card-back d-flex align-items-center justify-content-center">
+                            <p class="p-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Minima
+                                maxime
+                                quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Development</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-handshake fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Entrepreneurship</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
+                <div class="col-lg embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jk6sz25OZgw"></iframe>
                 </div>
             </div>
+        </div>
+        <!--
+                <div class="vertical carousel slide" data-ride="carousel">
+                    
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="item active">
+                        <div class="col-lg-5 flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front d-flex align-items-center justify-content-center">
+                                    <span class="fa-stack fa-2x">
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <h4 class="my-3">Innovation</h4>
+                                </div>
+                                <div class="flip-card-back d-flex align-items-center justify-content-center">
+                                    <p class="p-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Minima
+                                        maxime
+                                        quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-lg-5 flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front d-flex align-items-center justify-content-center">
+                                    <span class="fa-stack fa-2x">
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <h4 class="my-3">Development</h4>
+                                </div>
+                                <div class="flip-card-back d-flex align-items-center justify-content-center">
+                                    <p class="p-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Minima
+                                        maxime
+                                        quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-lg-5 flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front d-flex align-items-center justify-content-center">
+                                    <span class="fa-stack fa-2x">
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fas fa-handshake fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <h4 class="my-3">Entrepreneurship</h4>
+                                </div>
+                                <div class="flip-card-back d-flex align-items-center justify-content-center">
+                                    <p class="p-5 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Minima
+                                        maxime
+                                        quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
         </div>
     </section>
     <!--Blockquote-->
@@ -726,7 +787,8 @@
                         value="Send Message" />
                 </div>
             </form>
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 0; right: 0;">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+                style="position: absolute; top: 0; right: 0;">
                 <div class="toast-header">
                     <img src="..." class="rounded mr-2" alt="...">
                     <strong class="mr-auto">Email Status</strong>
