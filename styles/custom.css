@@ -31,7 +31,6 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
 .flip-card-front {
   background-color: transparent;
   color: black;
@@ -42,6 +41,158 @@
   color: white;
   transform: rotateY(180deg);
 }
+.event-card {
+  position: relative;
+  width: 400px;
+  height: 500px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.bg-img {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  left: 0px;
+  top: 0px;
+  border-radius: 10px;
+  background: #e3be47;
+}
+.event-title {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  left: 50px;
+  top: 75px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+   
+  color: #000000;
+  }
+
+  .event-btn {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    left: 50px;
+    top: 185px;
+     
+    background: #9BB7FF;
+    border-radius: 50px;
+    }
+     
+    .event-btn-title {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+   
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+     
+    color: #000000;
+    }
+     
+    .event-date-box {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 50px;
+    top: 262px;
+     
+    background: #E6E6E6;
+    border-radius: 50px;
+    }
+     
+    .event-date-text {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+   
+     
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+     
+    color: #000000;
+    }
+     
+    .event-time-box {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 220px;
+    top: 262px;
+     
+    background: #E6E6E6;
+    border-radius: 50px;
+    }
+     
+    .event-time-text {
+     
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+     
+    color: #000000;
+    }
+     
+    .event-description-box {
+    position: absolute;
+    width: 300px;
+    height: 148px;
+    left: 50px;
+    top: 312px;
+     
+    background: #E6E6E6;
+    border-radius: 10px;
+    }
+     
+    .event-description-text {
+    position: absolute;
+    width: 300px;
+    height: 148px;
+    
+     
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+     
+    color: #000000;
+    }
+     
+
+
+
 
 .col-lg.embed-responsive.embed-responsive-16by9 {
   border-radius: 2%;
