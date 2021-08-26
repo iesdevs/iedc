@@ -1,11 +1,9 @@
 <p id="downloads" align="center">
 	<img src="assets/img/logos/ies-iedc-logo.svg" height="120px"/>
-	<h1 align="center">IES IEDC</h1>
+	<h1 align="center"><a href="https://iesdevs.github.io/iedc">IES IEDC</a></h1>
 </p>
 
 [![Jekyll site CI](https://github.com/iesdevs/iedc/actions/workflows/jekyll.yml/badge.svg)](https://github.com/iesdevs/iedc/actions/workflows/jekyll.yml) [![Website shields.io](https://img.shields.io/website-up-down-green-red/https/iesdevs.github.io/iedc.svg)](https://iesdevs.github.io/iedc/) [![Gitmoji](https://img.shields.io/badge/gitmoji-%20😎-FFDD67.svg)](https://gitmoji.dev/) [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://opensource.org/) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/iesdevs/iedc/pulls)
-
-IES IEDC portfolio. Visit: <https://iesdevs.github.io/iedc/>
 
 ## How to contribute
 
@@ -13,32 +11,35 @@ IES IEDC portfolio. Visit: <https://iesdevs.github.io/iedc/>
 2. Add your creativity ✨
 3. Create a 🚪 pull request
 
----
-
 ## Todo
 
-## About
+- [ ] [Future Plan] Add a Django/NodeJS background
 
-- [ ] Embedded Video (full size) above IED / side by side eg: <https://i.stack.imgur.com/w23rV.png>
+### About
+
+- [X] Embedded Video (full size / ration) above IED / side by side eg: <https://i.stack.imgur.com/w23rV.png>
+- [X] Hover cards to display innovation, entrepreneurship & development.
 - [ ] Quote(s) can be made side by side with carrousel.
 
-## Portfolio
+### Portfolio
 
-- [ ] What to add and what not to add
+- [ ] IEDC Highlights
+- [ ] Add events carousal
 
-## Timeline
+### Timeline
 
 - [ ] Get timeline from sir
-- [ ] Reveal into half /  Drop-view Links
+- [ ] Reveal into half / Drop-view links
 
-## Team
+### Team
 
 - [ ] Insert hover / popup badges
 - [ ] Add team details
 
-## Contact Us
+### Contact Us
 
-- [ ] Implement a mail server
+- [X] ~~Implement a mail server~~
+- [X] Uses formspree <https://formspree.io>
 
 ---
 
