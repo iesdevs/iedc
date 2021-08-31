@@ -19,22 +19,22 @@
 
 - [X] Embedded Video (full size / ration) above IED / side by side eg: <https://i.stack.imgur.com/w23rV.png>
 - [X] Hover cards to display innovation, entrepreneurship & development.
-- [ ] Quote(s) can be made side by side with carrousel.
+- [ ] ~~Quote(s) can be made side by side with carrousel.~~
 
 ### Portfolio
 
-- [ ] IEDC Highlights
-- [ ] Add events carousal
+- [X] IEDC Highlights
+- [X] Add events carousal
 
 ### Timeline
 
 - [ ] Get timeline from sir
-- [ ] Reveal into half / Drop-view links
+- [ ] ~~Reveal into half / Drop-view links~~
 
 ### Team
 
-- [ ] Insert hover / popup badges
-- [ ] Add team details
+- [ ] ~~Insert hover / popup badges~~
+- [ ] ~~Add team details~~ <= In the video / Next cohort
 
 ### Contact Us
 

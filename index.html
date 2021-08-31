@@ -15,9 +15,9 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta name="og:url" property="og:url" content="https://iesdevs.github.io/iedc/">
-    <meta name="og:locale" property=og:locale content=en_US />
+    <meta name="og:locale" property="og:locale" content="en_US" />
     <meta name="og:title:" property="og:title" content="Innovation and Entrepreneurship Development Cell @ IESCE">
-    <meta name="description" name="og:description" property="og:description"
+    <meta name="description" property="og:description"
         content="Innovate, Inspire, Educate, Repeat. Welcome to the official website of IES IEDC, we're excited to have you with us for an adventurous journey ahead!">
     <meta property="og:image" content="assets/img/logos/ies-iedc-logo-meta.jpg">
 
@@ -180,7 +180,10 @@
                 </div>
                 <!--YT Embedded-->
                 <div class="col-lg embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jk6sz25OZgw"></iframe>
+                    <iframe class="embed-responsive-item" frameborder="0"
+                        src="https://www.youtube.com/embed/jk6sz25OZgw"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -224,10 +227,10 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Portfolio</h2>
-                <h3 class="section-subheading text-muted">Library of awesome works by IEDC</h3>
+                <h3 class="section-subheading text-muted">Library of awesomeness by IEDC</h3>
             </div>
 
-            <div class="row">
+            <div class="row m-5">
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <!--IEDC CRAFTS-->
                     <div class="portfolio-item-card">
@@ -236,12 +239,28 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-info-circle fa-3x"></i></div>
                                 </div>
-                                <img class="portfolio-img img-fluid" src="assets\img\portfolio\craft-allies.jpg"
+                                <img class="portfolio-img img-fluid" src="assets/img/portfolio/craft-allies.gif"
                                     alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Crafts Allies</div>
                                 <div class="portfolio-caption-subheading text-muted">Handiwork</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item-card">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-info-circle fa-3x"></i></div>
+                                </div>
+                                <img class="portfolio-img img-fluid" src="assets/img/portfolio/voice.gif" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">EI-Dex Talks</div>
+                                <div class="portfolio-caption-subheading text-muted">Sessions</div>
                             </div>
                         </div>
                     </div>
@@ -263,299 +282,277 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="portfolio-item-card">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-info-circle fa-3x"></i></div>
+            </div>
+            <!--Upcoming events-->
+            <div class="container my-4">
+
+                <hr class="hr-text" data-content="***">
+
+                <h3 class="text-center">Events</h3>
+
+                <!--Carousel Wrapper-->
+                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators-->
+
+                    <!--Slides-->
+                    <div class="carousel-inner pb-5" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="row p-3">
+                                <div class="col">
+                                    <div class="event-card m-3">
+                                        <header class=" event-card-thumb">
+                                            <a href="#"><img
+                                                    src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                        </header>
+                                        <date class="event-card-date">
+                                            <span class="event-card-date-day">30</span>
+                                            <br />
+                                            <span class="event-card-date-month">Dec</span>
+                                        </date>
+                                        <div class="event-card-body">
+                                            <div class="event-card-category">Orientation</div>
+                                            <h2 class="event-card-title">IEDC Orientation Program</h2>
+                                            <div class="event-card-subtitle">Mr. Akhil Madhav</div>
+                                            <p class="event-card-description">Building upon existing idea not only
+                                                saves time but accelerates phases of deployment benefitting the
+                                                growth of a
+                                                startup.
+                                            </p>
+                                        </div>
+                                        <footer class="event-card-footer">
+                                            35 Weeks ago • Video N/A
+                                        </footer>
+                                    </div>
                                 </div>
-                                <img class="portfolio-img img-fluid" src="assets\img\portfolio\ei-dex-talks.png"
-                                    alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">EI-Dex Talks</div>
-                                <div class="portfolio-caption-subheading text-muted">Sessions</div>
+                                <div class="col">
+                                    <div class="event-card m-3">
+                                        <header class=" event-card-thumb">
+                                            <a href="#"><img
+                                                    src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                        </header>
+                                        <date class="event-card-date">
+                                            <span class="event-card-date-day">09</span>
+                                            <br />
+                                            <span class="event-card-date-month">Jan</span>
+                                        </date>
+                                        <div class="event-card-body">
+                                            <div class="event-card-category">EI-Dex Thoughts</div>
+                                            <h2 class="event-card-title">Brainstorming Session</h2>
+                                            <div class="event-card-subtitle">IES IEDC</div>
+                                            <p class="event-card-description">The enhancement of
+                                                teamwork by developing innovative concepts, are
+                                                some of
+                                                the benefits of brainstorming sessions.
+                                            </p>
+                                        </div>
+                                        <footer class="event-card-footer">
+                                            34 Weeks ago • Video N/A
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="event-card m-3">
+                                        <header class=" event-card-thumb">
+                                            <a href="#"><img
+                                                    src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                        </header>
+                                        <date class="event-card-date">
+                                            <span class="event-card-date-day">13</span>
+                                            <br />
+                                            <span class="event-card-date-month">Jan</span>
+                                        </date>
+                                        <div class="event-card-body">
+                                            <div class="event-card-category">IEDC Summit</div>
+                                            <h2 class="event-card-title">Inspire'20</h2>
+                                            <div class="event-card-subtitle">KSUM IEDC</div>
+                                            <p class="event-card-description">Sahrdaya IEDC hosted an IEDC Summit
+                                                Precursor organised
+                                                by KSUM. The objective was to explore the innovative and
+                                                entrepreneural
+                                                skills in students.
+                                            </p>
+                                        </div>
+                                        <footer class="event-card-footer">
+                                            32 Weeks ago • Video N/A
+                                        </footer>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--Upcoming events-->
-                <div class="container my-4">
-
-                    <hr class="hr-text" data-content="***">
-
-                    <h3 class="text-center">Events</h3>
-
-                    <!--Carousel Wrapper-->
-                    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-                        <!--Indicators-->
-                        <ol class="carousel-indicators">
-                            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                            <li data-target="#multi-item-example" data-slide-to="1"></li>
-                            <li data-target="#multi-item-example" data-slide-to="2"></li>
-                        </ol>
-                        <!--/.Indicators-->
-
-                        <!--Slides-->
-                        <div class="carousel-inner pb-5" role="listbox">
-
-                            <!--First slide-->
-                            <div class="carousel-item active">
-                                <div class="row p-3">
-                                    <div class="col">
-                                        <div class="event-card m-3">
-                                            <header class=" event-card-thumb">
-                                                <a href="#"><img
-                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
-                                            </header>
-                                            <date class="event-card-date">
-                                                <span class="event-card-date-day">30</span>
-                                                <br />
-                                                <span class="event-card-date-month">Dec</span>
-                                            </date>
-                                            <div class="event-card-body">
-                                                <div class="event-card-category">Orientation</div>
-                                                <h2 class="event-card-title">IEDC Orientation program</h2>
-                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
-                                                <p class="event-card-description">Building upon existing idea not only
-                                                    saves time but accelerates phases of deployment benefitting the
-                                                    growth of a
-                                                    startup.
-                                                </p>
-                                            </div>
-                                            <footer class="event-card-footer">
-                                                46 Weeks ago • <a href="#">Watch here</a>
-                                            </footer>
+                        <!--/.First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="row p-3">
+                                <div class="col">
+                                    <div class="event-card m-3">
+                                        <header class=" event-card-thumb">
+                                            <a href="#"><img
+                                                    src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                        </header>
+                                        <date class="event-card-date">
+                                            <span class="event-card-date-day">21</span>
+                                            <br />
+                                            <span class="event-card-date-month">Jan</span>
+                                        </date>
+                                        <div class="event-card-body">
+                                            <div class="event-card-category">EI-DeX Talks</div>
+                                            <h2 class="event-card-title">Campus and Startups</h2>
+                                            <div class="event-card-subtitle">Mr. Thompson Tom</div>
+                                            <p class="event-card-description">Inspired to
+                                                become aware about the hardships as there are no crooked measures
+                                                towards the
+                                                accomplishment of one's ideas.
+                                            </p>
                                         </div>
+                                        <footer class="event-card-footer">
+                                            32 Weeks ago • <a href="https://www.youtube.com/watch?v=WbWqBsy-8Po">Watch
+                                                here</a>
+                                        </footer>
                                     </div>
-                                    <div class="col">
-                                        <div class="event-card m-3">
-                                            <header class=" event-card-thumb">
-                                                <a href="#"><img
-                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
-                                            </header>
-                                            <date class="event-card-date">
-                                                <span class="event-card-date-day">30</span>
-                                                <br />
-                                                <span class="event-card-date-month">Dec</span>
-                                            </date>
-                                            <div class="event-card-body">
-                                                <div class="event-card-category">Orientation</div>
-                                                <h2 class="event-card-title">IEDC Orientation program</h2>
-                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
-                                                <p class="event-card-description">Building upon existing idea not only
-                                                    saves time but accelerates phases of deployment benefitting the
-                                                    growth of a
-                                                    startup.
-                                                </p>
-                                            </div>
-                                            <footer class="event-card-footer">
-                                                46 Weeks ago • <a href="#">Watch here</a>
-                                            </footer>
+                                </div>
+                                <div class="col">
+                                    <div class="event-card m-3">
+                                        <header class=" event-card-thumb">
+                                            <a href="#"><img
+                                                    src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                        </header>
+                                        <date class="event-card-date">
+                                            <span class="event-card-date-day">28</span>
+                                            <br />
+                                            <span class="event-card-date-month">Jan</span>
+                                        </date>
+                                        <div class="event-card-body">
+                                            <div class="event-card-category">EI-DeX Talks</div>
+                                            <h2 class="event-card-title">Startups Coping with the Pandemic</h2>
+                                            <div class="event-card-subtitle">Mr. Nihal Pradeep</div>
+                                            <p class="event-card-description">A story about a startup tossed about by
+                                                the covid tide, yet struggled to retain it reigns to survive and it did.
+                                            </p>
                                         </div>
+                                        <footer class="event-card-footer">
+                                            31 Weeks ago • <a href="https://www.youtube.com/watch?v=aJ-r7rel7fg">Watch
+                                                here</a>
+                                        </footer>
                                     </div>
-                                    <div class="col">
-                                        <div class="event-card m-3">
-                                            <header class=" event-card-thumb">
-                                                <a href="#"><img
-                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
-                                            </header>
-                                            <date class="event-card-date">
-                                                <span class="event-card-date-day">30</span>
-                                                <br />
-                                                <span class="event-card-date-month">Dec</span>
-                                            </date>
-                                            <div class="event-card-body">
-                                                <div class="event-card-category">Orientation</div>
-                                                <h2 class="event-card-title">IEDC Orientation program</h2>
-                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
-                                                <p class="event-card-description">Building upon existing idea not only
-                                                    saves time but accelerates phases of deployment benefitting the
-                                                    growth of a
-                                                    startup.
-                                                </p>
-                                            </div>
-                                            <footer class="event-card-footer">
-                                                46 Weeks ago • <a href="#">Watch here</a>
-                                            </footer>
+                                </div>
+                                <div class="col">
+                                    <div class="event-card m-3">
+                                        <header class=" event-card-thumb">
+                                            <a href="#"><img
+                                                    src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                        </header>
+                                        <date class="event-card-date">
+                                            <span class="event-card-date-day">29</span>
+                                            <br />
+                                            <span class="event-card-date-month">Jan</span>
+                                        </date>
+                                        <div class="event-card-body">
+                                            <div class="event-card-category">IEDC Summit</div>
+                                            <h2 class="event-card-title">IEDC Virtual Summit</h2>
+                                            <div class="event-card-subtitle">KSUM IEDC</div>
+                                            <p class="event-card-description">The first virual summit one of it's kind
+                                                conducted by KSUM IEDC on VEMP was a grand event in every aspect.
+                                            </p>
                                         </div>
+                                        <footer class="event-card-footer">
+                                            31 Weeks ago • Video N/A
+                                        </footer>
                                     </div>
                                 </div>
                             </div>
-                            <!--/.First slide-->
-                            <!--Second slide-->
-                            <div class="carousel-item">
-                                <div class="row p-3">
-                                    <div class="col">
-                                        <div class="event-card m-3">
-                                            <header class=" event-card-thumb">
-                                                <a href="#"><img
-                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
-                                            </header>
-                                            <date class="event-card-date">
-                                                <span class="event-card-date-day">30</span>
-                                                <br />
-                                                <span class="event-card-date-month">Dec</span>
-                                            </date>
-                                            <div class="event-card-body">
-                                                <div class="event-card-category">Orientation</div>
-                                                <h2 class="event-card-title">IEDC Orientation program</h2>
-                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
-                                                <p class="event-card-description">Building upon existing idea not only
-                                                    saves time but accelerates phases of deployment benefitting the
-                                                    growth of a
-                                                    startup.
-                                                </p>
-                                            </div>
-                                            <footer class="event-card-footer">
-                                                46 Weeks ago • <a href="#">Watch here</a>
-                                            </footer>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="event-card m-3">
-                                            <header class=" event-card-thumb">
-                                                <a href="#"><img
-                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
-                                            </header>
-                                            <date class="event-card-date">
-                                                <span class="event-card-date-day">30</span>
-                                                <br />
-                                                <span class="event-card-date-month">Dec</span>
-                                            </date>
-                                            <div class="event-card-body">
-                                                <div class="event-card-category">Orientation</div>
-                                                <h2 class="event-card-title">IEDC Orientation program</h2>
-                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
-                                                <p class="event-card-description">Building upon existing idea not only
-                                                    saves time but accelerates phases of deployment benefitting the
-                                                    growth of a
-                                                    startup.
-                                                </p>
-                                            </div>
-                                            <footer class="event-card-footer">
-                                                46 Weeks ago • <a href="#">Watch here</a>
-                                            </footer>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="event-card m-3">
-                                            <header class=" event-card-thumb">
-                                                <a href="#"><img
-                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
-                                            </header>
-                                            <date class="event-card-date">
-                                                <span class="event-card-date-day">30</span>
-                                                <br />
-                                                <span class="event-card-date-month">Dec</span>
-                                            </date>
-                                            <div class="event-card-body">
-                                                <div class="event-card-category">Orientation</div>
-                                                <h2 class="event-card-title">IEDC Orientation program</h2>
-                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
-                                                <p class="event-card-description">Building upon existing idea not only
-                                                    saves time but accelerates phases of deployment benefitting the
-                                                    growth of a
-                                                    startup.
-                                                </p>
-                                            </div>
-                                            <footer class="event-card-footer">
-                                                46 Weeks ago • <a href="#">Watch here</a>
-                                            </footer>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.Second slide-->
-                            <!--Third slide-->
-                            <div class="carousel-item">
-                                <div class="row p-3">
-                                    <div class="col">
-                                        <div class="event-card m-3">
-                                            <header class=" event-card-thumb">
-                                                <a href="#"><img
-                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
-                                            </header>
-                                            <date class="event-card-date">
-                                                <span class="event-card-date-day">30</span>
-                                                <br />
-                                                <span class="event-card-date-month">Dec</span>
-                                            </date>
-                                            <div class="event-card-body">
-                                                <div class="event-card-category">Orientation</div>
-                                                <h2 class="event-card-title">IEDC Orientation program</h2>
-                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
-                                                <p class="event-card-description">Building upon existing idea not only
-                                                    saves time but accelerates phases of deployment benefitting the
-                                                    growth of a
-                                                    startup.
-                                                </p>
-                                            </div>
-                                            <footer class="event-card-footer">
-                                                46 Weeks ago • <a href="#">Watch here</a>
-                                            </footer>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="event-card m-3">
-                                            <header class=" event-card-thumb">
-                                                <a href="#"><img
-                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
-                                            </header>
-                                            <date class="event-card-date">
-                                                <span class="event-card-date-day">30</span>
-                                                <br />
-                                                <span class="event-card-date-month">Dec</span>
-                                            </date>
-                                            <div class="event-card-body">
-                                                <div class="event-card-category">Orientation</div>
-                                                <h2 class="event-card-title">IEDC Orientation program</h2>
-                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
-                                                <p class="event-card-description">Building upon existing idea not only
-                                                    saves time but accelerates phases of deployment benefitting the
-                                                    growth of a
-                                                    startup.
-                                                </p>
-                                            </div>
-                                            <footer class="event-card-footer">
-                                                46 Weeks ago • <a href="#">Watch here</a>
-                                            </footer>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="event-card m-3">
-                                            <header class=" event-card-thumb">
-                                                <a href="#"><img
-                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
-                                            </header>
-                                            <date class="event-card-date">
-                                                <span class="event-card-date-day">30</span>
-                                                <br />
-                                                <span class="event-card-date-month">Dec</span>
-                                            </date>
-                                            <div class="event-card-body">
-                                                <div class="event-card-category">Orientation</div>
-                                                <h2 class="event-card-title">IEDC Orientation program</h2>
-                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
-                                                <p class="event-card-description">Building upon existing idea not only
-                                                    saves time but accelerates phases of deployment benefitting the
-                                                    growth of a
-                                                    startup.
-                                                </p>
-                                            </div>
-                                            <footer class="event-card-footer">
-                                                46 Weeks ago • <a href="#">Watch here</a>
-                                            </footer>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.Third slide-->
                         </div>
-                        <!--/.Slides-->
+                        <!--/.Second slide-->
+                        <!--Third slide-->
+                        <div class="carousel-item">
+                            <div class="row p-3">
+                                <div class="col">
+                                    <div class="event-card m-3">
+                                        <header class=" event-card-thumb">
+                                            <a href="#"><img
+                                                    src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                        </header>
+                                        <date class="event-card-date">
+                                            <span class="event-card-date-day">09</span>
+                                            <br />
+                                            <span class="event-card-date-month">Feb</span>
+                                        </date>
+                                        <div class="event-card-body">
+                                            <div class="event-card-category">EI-DeX Talks</div>
+                                            <h2 class="event-card-title"> IP Management for Startups</h2>
+                                            <div class="event-card-subtitle">Ms. Pooja Rawal</div>
+                                            <p class="event-card-description">The what, why and how of intellectual
+                                                property rights was brought to light. </p>
+                                        </div>
+                                        <footer class="event-card-footer">
+                                            29 Weeks ago • <a href="https://www.youtube.com/watch?v=7plhOrhMca4">Watch
+                                                here</a>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="event-card m-3">
+                                        <header class=" event-card-thumb">
+                                            <a href="#"><img
+                                                    src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                        </header>
+                                        <date class="event-card-date">
+                                            <span class="event-card-date-day">16</span>
+                                            <br />
+                                            <span class="event-card-date-month">May</span>
+                                        </date>
+                                        <div class="event-card-body">
+                                            <div class="event-card-category">Misc</div>
+                                            <h2 class="event-card-title">Innovation and IPR practices</h2>
+                                            <div class="event-card-subtitle">Mr. Ramesh Chandra Panda</div>
+                                            <p class="event-card-description">Is safeguarding ones innovation worth it?
+                                                Why, when and how to do it. Outlines the concepts of good IPRs
+                                                practices.
+                                            </p>
+                                        </div>
+                                        <footer class="event-card-footer">
+                                            17 Weeks ago • Video N/A
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="event-card m-3">
+                                        <header class=" event-card-thumb">
+                                            <a href="#"><img
+                                                    src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                        </header>
+                                        <date class="event-card-date">
+                                            <span class="event-card-date-day">12</span>
+                                            <br />
+                                            <span class="event-card-date-month">Jun</span>
+                                        </date>
+                                        <div class="event-card-body">
+                                            <div class="event-card-category">EI-DeX Talks</div>
+                                            <h2 class="event-card-title">Entrepreneural Journey</h2>
+                                            <div class="event-card-subtitle">Ms. Anooja Bashir</div>
+                                            <p class="event-card-description">Speaker shares her entrepreneural voyage,
+                                                how she failed, what she learned and what kept her going.
+                                            </p>
+                                        </div>
+                                        <footer class="event-card-footer">
+                                            11 Weeks ago • <a href="https://www.youtube.com/watch?v=X41Z5otQYoU">Watch
+                                                here</a>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Third slide-->
                     </div>
+                    <!--/.Slides-->
                 </div>
             </div>
         </div>
@@ -929,14 +926,12 @@
                 <div class="modal-body">
                     <div class="cmb-3">
                         <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="assets/img/portfolio/01-full.jpg" class="card-img modal-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
+                            <div class="col">
                                 <div class="card-body">
-                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <h2 class="text">Craft Allies</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    <p class="text-justify">Use this area to describe your project. Lorem ipsum dolor
+                                        sit amet, consectetur
                                         adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
                                         deserunt
                                         repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores
@@ -946,19 +941,11 @@
                             </div>
                         </div>
                     </div>
-
-                    <hr>
-                    <ul class="list-inline text-center">
-                        <li>Date: January 2021</li>
-                        <li>Client: Threads</li>
-                        <li>Category: Illustration</li>
-                    </ul>
-
                 </div>
                 <div class="modal-footer" style="border: none;">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close Project</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <a type="button" class="btn btn-danger" href="pages/crafts/crafts.html" rel="noopener noreferrer"
-                        target="_blank"> Go to Site</a>
+                        target="_blank"> Visit Website</a>
                 </div>
             </div>
         </div>
@@ -972,35 +959,23 @@
                 <div class="modal-body">
                     <div class="cmb-3">
                         <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="assets/img/portfolio/02-full.jpg" class="card-img modal-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
+                            <div class="col">
                                 <div class="card-body">
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
-                                        deserunt
-                                        repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores
-                                        repudiandae,
-                                        nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text">EI-DeX Talks</h2>
+                                    <p class="item-intro text-muted">Mini TEDx</p>
+                                    <p class="text-justify">This servers as a platform for students to directly reach
+                                        out inventors,
+                                        creators,
+                                        entrepreneurs and such. It's where great personalities share stories of their
+                                        incredible journey which motivates and inspires students to face challenges by
+                                        overcoming fear. Checkout the events section right below to listen to them.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <hr>
-                    <ul class="list-inline text-center">
-                        <li>Date: January 2021</li>
-                        <li>Client: Explore</li>
-                        <li>Category: Graphic Design</li>
-                    </ul>
-
                 </div>
                 <div class="modal-footer" style="border: none;">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close Project</button>
-
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -1014,43 +989,26 @@
                 <div class="modal-body">
                     <div class="cmb-3">
                         <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="assets/img/portfolio/03-full.jpg" class="card-img modal-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
+                            <div class="col">
                                 <div class="card-body">
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
-                                        deserunt
-                                        repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores
-                                        repudiandae,
-                                        nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text">Go-Getters</h2>
+                                    <p class="item-intro text-muted">Flamed with pasion?</p>
+                                    <p class="text-justify">Hit that red "Read More" button view the ever growing list
+                                        of young innovators and entrepreneurs from IES IEDC. They carry an inner passion
+                                        to equip themselves, better with every opportunity.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <hr>
-                    <ul class="list-inline text-center">
-                        <li>Date: January 2021</li>
-                        <li>Client: Finish</li>
-                        <li>Category: Identity</li>
-                    </ul>
-
                 </div>
                 <div class="modal-footer" style="border: none;">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close Project</button>
-
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-danger" href="#" rel="noopener noreferrer" target="_blank"> Read
+                        More</a>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
 
     <div>
         <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button"><i
