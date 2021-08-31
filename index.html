@@ -35,8 +35,13 @@
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Inter:wght@100;300;400;600;700;900&display=swap" rel="stylesheet" /> 
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
 
     <!-- Core & Custom theme CSS (includes Bootstrap)-->
     <link href="styles/main.css" rel="stylesheet" />
@@ -222,26 +227,29 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <!--IEDC CRAFTS-->
+                    <div class="portfolio-item-card">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-info-circle fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="..." />
+                            <img class="portfolio-img img-fluid" src="assets\img\portfolio\craft-allies.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Crafts</div>
+                            <div class="portfolio-caption-heading">Crafts Allies</div>
                             <div class="portfolio-caption-subheading text-muted">Handiwork</div>
                         </div>
                     </div>
                 </div>
+                </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item-card">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-info-circle fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="..." />
+                            <img class="portfolio-img img-fluid" src="assets\img\portfolio\ei-dex-talks.png" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">EI-Dex Talks</div>
@@ -249,263 +257,305 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item-card">
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-info-circle fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="..." />
+                            <img class="portfolio-img img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">IEDC Summit</div>
                             <div class="portfolio-caption-subheading text-muted">Meeting</div>
                         </div>
                     </div>
+                    </div>
                 </div>
 
-
                 <!--Upcoming events-->
-
-
-
                 <div class="container my-4">
 
+                    <hr class="hr-text" data-content="***">
 
-                    <hr class="mb-5" />
-                    <h3>Upcoming events</h3><br>
+                    <h3 class="text-center">Events</h3>
 
                     <!--Carousel Wrapper-->
                     <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-                        <!--Controls-->
-                        <div class="controls-top">
-                            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
-                                    class="fas fa-chevron-left"></i></a>
-                            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
-                                    class="fas fa-chevron-right"></i></a>
-                        </div>
-                        <!--/.Controls-->
 
                         <!--Indicators-->
                         <ol class="carousel-indicators">
                             <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
                             <li data-target="#multi-item-example" data-slide-to="1"></li>
-
-                        </ol><br>
-
+                            <li data-target="#multi-item-example" data-slide-to="2"></li>
+                        </ol>
                         <!--/.Indicators-->
 
                         <!--Slides-->
-                        <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner pb-5" role="listbox">
 
                             <!--First slide-->
                             <div class="carousel-item active">
-
-                                <div class="col-md-3" style="float:left">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <div class="alert alert-primary" role="alert">
-                                                EI-Dex Talks
-                                                <p class="text-secondary">21 June 2021</p>
+                                <div class="row p-3">
+                                    <div class="col">
+                                        <div class="event-card m-3">
+                                            <header class=" event-card-thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                            </header>
+                                            <date class="event-card-date">
+                                                <span class="event-card-date-day">30</span>
+                                                <br />
+                                                <span class="event-card-date-month">Dec</span>
+                                            </date>
+                                            <div class="event-card-body">
+                                                <div class="event-card-category">Orientation</div>
+                                                <h2 class="event-card-title">IEDC Orientation program</h2>
+                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
+                                                <p class="event-card-description">Building upon existing idea not only
+                                                    saves time but accelerates phases of deployment benefitting the
+                                                    growth of a
+                                                    startup.
+                                                </p>
                                             </div>
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up the bulk of the
-                                                card's content.</p>
-
+                                            <footer class="event-card-footer">
+                                                46 Weeks ago • <a href="#">Watch here</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="event-card m-3">
+                                            <header class=" event-card-thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                            </header>
+                                            <date class="event-card-date">
+                                                <span class="event-card-date-day">30</span>
+                                                <br />
+                                                <span class="event-card-date-month">Dec</span>
+                                            </date>
+                                            <div class="event-card-body">
+                                                <div class="event-card-category">Orientation</div>
+                                                <h2 class="event-card-title">IEDC Orientation program</h2>
+                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
+                                                <p class="event-card-description">Building upon existing idea not only
+                                                    saves time but accelerates phases of deployment benefitting the
+                                                    growth of a
+                                                    startup.
+                                                </p>
+                                            </div>
+                                            <footer class="event-card-footer">
+                                                46 Weeks ago • <a href="#">Watch here</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="event-card m-3">
+                                            <header class=" event-card-thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                            </header>
+                                            <date class="event-card-date">
+                                                <span class="event-card-date-day">30</span>
+                                                <br />
+                                                <span class="event-card-date-month">Dec</span>
+                                            </date>
+                                            <div class="event-card-body">
+                                                <div class="event-card-category">Orientation</div>
+                                                <h2 class="event-card-title">IEDC Orientation program</h2>
+                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
+                                                <p class="event-card-description">Building upon existing idea not only
+                                                    saves time but accelerates phases of deployment benefitting the
+                                                    growth of a
+                                                    startup.
+                                                </p>
+                                            </div>
+                                            <footer class="event-card-footer">
+                                                46 Weeks ago • <a href="#">Watch here</a>
+                                            </footer>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-md-3" style="float:left">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <div class="alert alert-primary" role="alert">
-                                                Workshops
-                                                <p class="text-secondary">21 June 2021</p>
-                                            </div>
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up the bulk of the
-                                                card's content.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3" style="float:left">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <div class="alert alert-primary" role="alert">
-                                                EI-Dex Talks
-                                                <p class="text-secondary">21 June 2021</p>
-                                            </div>
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up the bulk of the
-                                                card's content.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3" style="float:left">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <div class="alert alert-primary" role="alert">
-                                                Workshops
-                                                <p class="text-secondary">21 June 2021</p>
-                                            </div>
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up the bulk of the
-                                                card's content.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                             <!--/.First slide-->
-
                             <!--Second slide-->
                             <div class="carousel-item">
-
-                                <div class="col-md-3" style="float:left">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <div class="alert alert-primary" role="alert">
-                                                Competitions
-                                                <p class="text-secondary">21 June 2021</p>
-
+                                <div class="row p-3">
+                                    <div class="col">
+                                        <div class="event-card m-3">
+                                            <header class=" event-card-thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                            </header>
+                                            <date class="event-card-date">
+                                                <span class="event-card-date-day">30</span>
+                                                <br />
+                                                <span class="event-card-date-month">Dec</span>
+                                            </date>
+                                            <div class="event-card-body">
+                                                <div class="event-card-category">Orientation</div>
+                                                <h2 class="event-card-title">IEDC Orientation program</h2>
+                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
+                                                <p class="event-card-description">Building upon existing idea not only
+                                                    saves time but accelerates phases of deployment benefitting the
+                                                    growth of a
+                                                    startup.
+                                                </p>
                                             </div>
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up the bulk of the
-                                                card's content.</p>
-
+                                            <footer class="event-card-footer">
+                                                46 Weeks ago • <a href="#">Watch here</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="event-card m-3">
+                                            <header class=" event-card-thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                            </header>
+                                            <date class="event-card-date">
+                                                <span class="event-card-date-day">30</span>
+                                                <br />
+                                                <span class="event-card-date-month">Dec</span>
+                                            </date>
+                                            <div class="event-card-body">
+                                                <div class="event-card-category">Orientation</div>
+                                                <h2 class="event-card-title">IEDC Orientation program</h2>
+                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
+                                                <p class="event-card-description">Building upon existing idea not only
+                                                    saves time but accelerates phases of deployment benefitting the
+                                                    growth of a
+                                                    startup.
+                                                </p>
+                                            </div>
+                                            <footer class="event-card-footer">
+                                                46 Weeks ago • <a href="#">Watch here</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="event-card m-3">
+                                            <header class=" event-card-thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                            </header>
+                                            <date class="event-card-date">
+                                                <span class="event-card-date-day">30</span>
+                                                <br />
+                                                <span class="event-card-date-month">Dec</span>
+                                            </date>
+                                            <div class="event-card-body">
+                                                <div class="event-card-category">Orientation</div>
+                                                <h2 class="event-card-title">IEDC Orientation program</h2>
+                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
+                                                <p class="event-card-description">Building upon existing idea not only
+                                                    saves time but accelerates phases of deployment benefitting the
+                                                    growth of a
+                                                    startup.
+                                                </p>
+                                            </div>
+                                            <footer class="event-card-footer">
+                                                46 Weeks ago • <a href="#">Watch here</a>
+                                            </footer>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-md-3" style="float:left">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <div class="alert alert-primary" role="alert">
-                                                Competitions
-                                                <p class="text-secondary">21 June 2021</p>
-
-                                            </div>
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up the bulk of the
-                                                card's content.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3" style="float:left">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <div class="alert alert-primary" role="alert">
-                                                EI-Dex Talks
-                                                <p class="text-secondary">21 June 2021</p>
-                                            </div>
-
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up the bulk of the
-                                                card's content.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                             <!--/.Second slide-->
-
-
-
+                            <!--Third slide-->
+                            <div class="carousel-item">
+                                <div class="row p-3">
+                                    <div class="col">
+                                        <div class="event-card m-3">
+                                            <header class=" event-card-thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                            </header>
+                                            <date class="event-card-date">
+                                                <span class="event-card-date-day">30</span>
+                                                <br />
+                                                <span class="event-card-date-month">Dec</span>
+                                            </date>
+                                            <div class="event-card-body">
+                                                <div class="event-card-category">Orientation</div>
+                                                <h2 class="event-card-title">IEDC Orientation program</h2>
+                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
+                                                <p class="event-card-description">Building upon existing idea not only
+                                                    saves time but accelerates phases of deployment benefitting the
+                                                    growth of a
+                                                    startup.
+                                                </p>
+                                            </div>
+                                            <footer class="event-card-footer">
+                                                46 Weeks ago • <a href="#">Watch here</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="event-card m-3">
+                                            <header class=" event-card-thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                            </header>
+                                            <date class="event-card-date">
+                                                <span class="event-card-date-day">30</span>
+                                                <br />
+                                                <span class="event-card-date-month">Dec</span>
+                                            </date>
+                                            <div class="event-card-body">
+                                                <div class="event-card-category">Orientation</div>
+                                                <h2 class="event-card-title">IEDC Orientation program</h2>
+                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
+                                                <p class="event-card-description">Building upon existing idea not only
+                                                    saves time but accelerates phases of deployment benefitting the
+                                                    growth of a
+                                                    startup.
+                                                </p>
+                                            </div>
+                                            <footer class="event-card-footer">
+                                                46 Weeks ago • <a href="#">Watch here</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="event-card m-3">
+                                            <header class=" event-card-thumb">
+                                                <a href="#"><img
+                                                        src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></a>
+                                            </header>
+                                            <date class="event-card-date">
+                                                <span class="event-card-date-day">30</span>
+                                                <br />
+                                                <span class="event-card-date-month">Dec</span>
+                                            </date>
+                                            <div class="event-card-body">
+                                                <div class="event-card-category">Orientation</div>
+                                                <h2 class="event-card-title">IEDC Orientation program</h2>
+                                                <div class="event-card-subtitle">Mr. Akhil Madhav</div>
+                                                <p class="event-card-description">Building upon existing idea not only
+                                                    saves time but accelerates phases of deployment benefitting the
+                                                    growth of a
+                                                    startup.
+                                                </p>
+                                            </div>
+                                            <footer class="event-card-footer">
+                                                46 Weeks ago • <a href="#">Watch here</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.Third slide-->
                         </div>
                         <!--/.Slides-->
-
-                    </div>
-                    <!--/.Carousel Wrapper-->
-                    <hr class="mb-5" />
-
-
-                    <!--upcoming events ends-->
-
-                </div>
-               
-                <div class="event-card">
-                    <div class="bg-img">
-
-                        <p class="event-title align-items-center justify-content-center">
-                            Title
-                        </p>
-
-                    </div>
-                    <div class="event-btn">
-                        <p class="event-btn-title align-items-center justify-content-center">
-                            Join
-                        </p>
-                    </div>
-                    <div class="event-date-box">
-                       
-                        <p class="event-date-text align-items-center justify-content-center">Date</p>
-                    </div>
-                    <div class="event-time-box">
-                        <p class="event-time-text align-items-center justify-content-center">Time</p>
-                        
-                    </div>
-                    <div class="event-description-box">
-                        <p class="event-description-text align-items-center justify-content-center">Description</p>
-                       
-                    </div>
-
-                </div>
-                <!-- <div class="event-card">
-                    <div class="card mb-2">
-                    <div class="shadow-lg p-3 mb-5 bg-white rounded">
-                       
-                            
-                            <p>hgdhcsd cjsjbcjhdbcjh sd cd</p>
-                      
                     </div>
                 </div>
-                </div> -->
-                
+            </div>
+        </div>
+        <!--/.Carousel Wrapper-->
+        <!--upcoming events ends-->
     </section>
 
     <!-- Timeline-->
