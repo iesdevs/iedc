@@ -403,7 +403,7 @@
 }
 .card-info-icon {
   position: relative;
-  top: 8px;
+  top: 9px;
   left: 49px;
   color: rgb(255, 255, 255);
   transition: ease-out 0.3s;
@@ -430,5 +430,15 @@
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08),
     0px 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
-
 /* Team Info Card */
+
+.timeline a {
+  color: #343a40;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
