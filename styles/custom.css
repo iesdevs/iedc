@@ -39,8 +39,8 @@
 }
 
 .flip-card-back {
-  background-color: #ffd22f;
-  color: rgb(58, 58, 58);
+  background-color: #e6b400;
+  color: rgb(255, 255, 255);
   transform: rotateY(180deg);
 }
 
@@ -394,17 +394,17 @@
 
 .card-info {
   position: absolute;
-  width: 300px;
-  top: 30px;
-  left: 130px;
+  width: 200px;
+  top: 0px;
+  left: 150px;
   clip-path: circle(15px at 150px 20px);
   transition: all ease-in-out 0.3s;
-  background-color: #232629;
+  background-color: #343a40;
 }
 .card-info-icon {
   position: relative;
-  top: 7px;
-  right: 1px;
+  top: 9px;
+  left: 49px;
   color: rgb(255, 255, 255);
   transition: ease-out 0.3s;
 }
@@ -430,5 +430,15 @@
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08),
     0px 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
-
 /* Team Info Card */
+
+.timeline a {
+  color: #343a40;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}

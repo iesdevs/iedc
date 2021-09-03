@@ -28,13 +28,13 @@
 
 ### Timeline
 
-- [ ] Get timeline from sir
+- [X] Get timeline from sir
 - [ ] ~~Reveal into half / Drop-view links~~
 
 ### Team
 
-- [ ] ~~Insert hover / popup badges~~
-- [ ] ~~Add team details~~ <= In the video / Next cohort
+- [X] Insert hover / popup badges
+- [X] Add team member names
 
 ### Contact Us
 
