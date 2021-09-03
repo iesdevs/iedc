@@ -67,13 +67,13 @@
 }
 .carousel-item-next,
 .active.carousel-item-right {
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 .carousel-item-prev,
 .active.carousel-item-left {
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 
 /* About Cards */
@@ -395,12 +395,11 @@
 .card-info {
   position: absolute;
   width: 300px;
-  height: 300px;
   top: 30px;
   left: 130px;
   clip-path: circle(15px at 150px 20px);
   transition: all ease-in-out 0.3s;
-  background-color: #343a40;
+  background-color: #232629;
 }
 .card-info-icon {
   position: relative;
@@ -417,10 +416,10 @@
 }
 .card-info:hover,
 .card-info:focus {
-  clip-path: circle(100%);
+  clip-path: circle(90%);
   border-radius: 10px;
   box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
-  background: #fff;
+  background: #ffffff;
   outline: none;
 }
 .card-info:hover .card-info-icon,
