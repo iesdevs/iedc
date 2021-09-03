@@ -394,17 +394,17 @@
 
 .card-info {
   position: absolute;
-  width: 300px;
-  top: 30px;
-  left: 130px;
+  width: 200px;
+  top: 0px;
+  left: 150px;
   clip-path: circle(15px at 150px 20px);
   transition: all ease-in-out 0.3s;
-  background-color: #232629;
+  background-color: #343a40;
 }
 .card-info-icon {
   position: relative;
-  top: 7px;
-  right: 1px;
+  top: 8px;
+  left: 49px;
   color: rgb(255, 255, 255);
   transition: ease-out 0.3s;
 }
