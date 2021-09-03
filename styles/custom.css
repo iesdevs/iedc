@@ -67,28 +67,18 @@
 }
 .carousel-item-next,
 .active.carousel-item-right {
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 .carousel-item-prev,
 .active.carousel-item-left {
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 
 /* About Cards */
 
 /* Event Cards */
-/**
-* VARIABLES
-**/
-
-/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700); */
-
-/**
-* CARD
-**/
-
 .event-card {
   position: relative;
   width: 300px;
@@ -110,10 +100,6 @@
 .event-card:hover {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
-
-/**
-* DATE
-**/
 
 .event-card-date {
   position: absolute;
@@ -138,10 +124,6 @@
   text-transform: uppercase;
   font-size: 10px;
 }
-
-/**
-* THUMB
-**/
 
 .event-card-thumb {
   height: 200px;
@@ -172,10 +154,6 @@
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-
-/**
-* card_BODY
-**/
 
 .event-card-body {
   position: relative;
@@ -398,3 +376,59 @@
   opacity: 0.3;
 }
 /* Portfolio */
+
+/* Team & Info Card */
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team-member h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.card-info {
+  position: absolute;
+  width: 300px;
+  top: 30px;
+  left: 130px;
+  clip-path: circle(15px at 150px 20px);
+  transition: all ease-in-out 0.3s;
+  background-color: #232629;
+}
+.card-info-icon {
+  position: relative;
+  top: 7px;
+  right: 1px;
+  color: rgb(255, 255, 255);
+  transition: ease-out 0.3s;
+}
+.card-info-title {
+  padding-bottom: 10px;
+}
+.card-info-description {
+  text-align: right;
+}
+.card-info:hover,
+.card-info:focus {
+  clip-path: circle(90%);
+  border-radius: 10px;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  outline: none;
+}
+.card-info:hover .card-info-icon,
+.card-info:focus .card-info-icon {
+  opacity: 0;
+}
+.card-info:focus {
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08),
+    0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Team Info Card */
