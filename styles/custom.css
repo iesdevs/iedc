@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
-/* About Cards */
+.vsmn {
+  background-image: url("/home/jovial/Documents/Workspace/GitHub/joe733/0_forks/iedc/assets/img/paint-bg.png");
+  background-repeat: no-repeat;
+  background-size: 110% 110%;
+}
 
+/* About Cards */
 .flip-card {
   background-color: white;
   width: 300px;
