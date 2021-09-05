@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
-/* About Cards */
+.vsmn {
+  background-image: url("/home/jovial/Documents/Workspace/GitHub/joe733/0_forks/iedc/assets/img/paint-bg.png");
+  background-repeat: no-repeat;
+  background-size: 110% 110%;
+}
 
+/* About Cards */
 .flip-card {
   background-color: white;
   width: 300px;
@@ -268,10 +273,10 @@
 }
 /* Fancy Seperator */
 
-/* Portfolio */
+/* Portfolio need 800 x 600 image */
 .portfolio-item-card {
   width: 300px;
-  height: 300px;
+  /* height: 300px; */
   border-radius: 5%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
@@ -397,7 +402,7 @@
   width: 200px;
   top: 0px;
   left: 150px;
-  clip-path: circle(15px at 150px 20px);
+  clip-path: circle(16px at 150px 20px);
   transition: all ease-in-out 0.3s;
   background-color: #343a40;
 }
