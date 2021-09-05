@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .vsmn {
-  background-image: url("/home/jovial/Documents/Workspace/GitHub/joe733/0_forks/iedc/assets/img/paint-bg.png");
+  background-image: url("../assets/img/paint-bg.png");
   background-repeat: no-repeat;
   background-size: 110% 110%;
 }
