@@ -23,7 +23,7 @@
     height: 100%;
     display: table;
     float: left;
-    border: 5px solid #ff9;
+    /*border: 5px solid #ff9;*/
 }
 .logo_container h1{
     color: #fff;
@@ -39,6 +39,7 @@
     float: right;
     height: 100%;
     color: white;
+    z-index: 1;
 }
 .navigation ul{
     padding: 0;
@@ -88,7 +89,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-image: url("bg-pic.jpg");
+    background-image: url("../assets/img/bg-pic.jpg");
     background-size: cover;
     
 }
@@ -180,7 +181,7 @@ input{
     border-radius: 10px;
     font-family: monospace;
     color: white;
-    height: 105px;
+    height: 200px;
 }
 .contact header{
     padding: 10px;
