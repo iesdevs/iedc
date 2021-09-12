@@ -1,8 +1,3 @@
-/*!
-* Start Bootstrap - Agency v6.0.5 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
 (function ($) {
     "use strict"; // Start of use strict
 
@@ -71,4 +66,4 @@
         });
     });
 
-})(jQuery); // End of use strict
+})(jQuery);
