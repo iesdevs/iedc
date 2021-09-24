@@ -13,7 +13,7 @@
 
 ## Todo
 
-- [ ] [Future Plan] Add a Django/NodeJS background
+- [ ] [Future Plan] Add a Django/NodeJS backend
 
 ### About
 
