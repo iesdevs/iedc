@@ -1,5 +1,5 @@
 <p id="downloads" align="center">
-	<img src="assets/img/logos/ies-iedc-logo.svg" height="120px"/>
+	<img src="ies-iedc-logo.svg" height="120px"/>
 	<h1 align="center"><a href="https://iesdevs.github.io/iedc">IES IEDC</a></h1>
 </p>
 
