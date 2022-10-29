@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p id="downloads" align="center">
+	<img src="ies-iedc-logo.svg" height="120px"/>
+	<h1 align="center"><a href="https://iesdevs.github.io/iedc">IES IEDC</a></h1>
+</p>
 
-## Getting Started
+[![Jekyll site CI](https://github.com/iesdevs/iedc/actions/workflows/jekyll.yml/badge.svg)](https://github.com/iesdevs/iedc/actions/workflows/jekyll.yml) [![Website shields.io](https://img.shields.io/website-up-down-green-red/https/iesdevs.github.io/iedc.svg)](https://iesdevs.github.io/iedc/) [![Gitmoji](https://img.shields.io/badge/gitmoji-%20😎-FFDD67.svg)](https://gitmoji.dev/) [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://opensource.org/) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/iesdevs/iedc/pulls)
 
-First, run the development server:
+## How to contribute
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. 🍴 Fork this repository
+2. Add your creativity ✨
+3. Create a 🚪 pull request
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Todo
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- [ ] [Future Plan] Add a Django/NodeJS backend
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### About
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [X] Embedded Video (full size / ration) above IED / side by side eg: <https://i.stack.imgur.com/w23rV.png>
+- [X] Hover cards to display innovation, entrepreneurship & development.
+- [ ] ~~Quote(s) can be made side by side with carrousel.~~
 
-## Learn More
+### Portfolio
 
-To learn more about Next.js, take a look at the following resources:
+- [X] IEDC Highlights
+- [X] Add events carousal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Timeline
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [X] Get timeline from sir
+- [ ] ~~Reveal into half / Drop-view links~~
 
-## Deploy on Vercel
+### Team
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [X] Insert hover / popup badges
+- [X] Add team member names
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Contact Us
+
+- [X] ~~Implement a mail server~~
+- [X] Uses formspree <https://formspree.io>
+
+---
+
+*NB: The license applies to the website's source code. Contents hosted on the website are sole property of IES IEDC unless specified otherwise.*
