@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 // import '../styles/custom.css';
 // import '../styles/main.css';
 import principal from '../assets/img/team/current/principal.jpg';
@@ -14,9 +14,6 @@ import iic_logo from '../assets/img/logos/iic-logo.svg';
 import ksum_logo from '../assets/img/logos/ksum-logo.svg';
 import iesce_logo from '../assets/img/logos/iesce-logo.svg';
 import iedc_new_logo from '../assets/img/logos/iedc-new-logo.svg';
-
-
-
 
 
 export default function Home() {
