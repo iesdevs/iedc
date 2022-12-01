@@ -1,17 +1,19 @@
 
 export default function Footer(){
+    const year = new Date().getFullYear;
+    console.log(year)
     return(
       
       <footer className="footer py-4">
     <div className="container">
       <div className="row align-items-center">
         <div className="col-lg-4 text-lg-left">
-          Copyright &copy; IES IEDC
+          Copyright &copy; IES IEDC {year}
           {/* <!-- This script automatically adds the current year to your website footer--> */}
           {/* <!-- (credit: https://updateyourfooter.com/)--> */}
-          <script>
+          {/* <script>
             document.write(new Date().getFullYear());
-          </script>
+          </script> */}
         </div>
         <div className="col-lg-4 my-3 my-lg-0">
           <a className="btn btn-dark btn-social mx-2" href="https://linkedin.com/company/ies-iedc-iic/"><i

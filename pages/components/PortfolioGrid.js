@@ -299,7 +299,7 @@ import Image from 'next/image';
                       <div className="event-card m-3">
                         <header className="event-card-thumb">
                           <a href="#">
-                            <img src="https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                            <img src={item.imgSrc} />
                           </a>
                         </header>
                         <div className="event-card-date">

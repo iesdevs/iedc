@@ -7,7 +7,7 @@ export default function About(){
           <div className="text-center">
             <h2 className="section-heading text-uppercase">About</h2>
             <h3 className="section-subheading text-muted">
-              Innovation &amp; Entrepreneurship Development Cell @ IESCE
+              Innovation & Entrepreneurship Development Cell @ IESCE
             </h3>
           </div>
           <div className="row m-5">
