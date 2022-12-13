@@ -221,6 +221,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+
 }
 
 svg {
@@ -6724,6 +6725,10 @@ button.bg-dark:focus {
 
 .rounded-lg {
   border-radius: 0.3rem !important;
+}
+.objectfit{
+  object-fit: cover;
+  vertical-align: bottom;
 }
 
 .rounded-circle {
