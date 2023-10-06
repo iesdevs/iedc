@@ -1,334 +1,346 @@
-import ideathon from '../../assets/img/portfolio/ideathon.gif';
-import craft from '../../assets/img/portfolio/craft-allies.gif';
-import hall_of_frame from '../../assets/img/portfolio/hall-of-fame.gif';
-import startup from '../../assets/img/portfolio/startup.gif';
-import voice from '../../assets/img/portfolio/voice.gif';
-import workshop from '../../assets/img/portfolio/workshop.gif';
-import Image from 'next/image';
+import ideathon from "../../assets/img/portfolio/ideathon.gif";
+import craft from "../../assets/img/portfolio/craft-allies.gif";
+import hall_of_frame from "../../assets/img/portfolio/hall-of-fame.gif";
+import startup from "../../assets/img/portfolio/startup.gif";
+import voice from "../../assets/img/portfolio/voice.gif";
+import workshop from "../../assets/img/portfolio/workshop.gif";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
- 
- export default function PortfolioGrid(){
+const DATA = [
+  {
+    imgSrc:
+      "https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    day: "30",
+    Month: "Dec",
+    category: "Orientation",
+    title: "IEDC Orientation Program",
+    subTitle: "Mr. Akhil Madhav",
+    description:
+      " Building upon existing ideas, not only saves time but accelerates phases of deployment, benefitting the growth of a startup.",
+    date: "2021-12-30",
+    dateFormated: new Date("2021-12-30"),
+  },
+  {
+    imgSrc:
+      "https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    day: "8",
+    Month: "Oct",
+    category: "EI-DEX TALKS",
+    title: "The Journey of TinkerHub",
+    subTitle: "Mr. Moosa Mehar M P",
+    description: "Live now @ https://youtu.be/tUlKFSkq0R0",
+    date: "2021-12-30",
+    dateFormated: new Date("2021-12-30"),
+  },
+  {
+    imgSrc: "https://iesdevs.github.io/iedc/images/poster.jpg",
+    day: "4",
+    Month: "Nov",
+    category: "Orientation",
+    title: "IEDC Orientation Program",
+    subTitle: "Mr. Pranav P",
+    description:
+      "IEDC orientation program was conducted for S3 2021 batch students",
+    date: "2022-11-04",
+    dateFormated: new Date("2022-11-04"),
+  },
+  {
+    imgSrc:
+      "https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    day: "7 & 8",
+    Month: "Nov",
+    category: "EI-DEX START-UP BOOTCAMP'22 PROGRAM",
+    title: "EI-DEX Start-Up Bootcamp",
+    subTitle: "Mr. Vishnu Nagaraj",
+    description:
+      "EI- DEX Start-Up Bootcamp'22 will be conducted on 7th and 8th of November 2022 at IES College auditorium",
+    date: "2022-11-07",
+    dateFormated: new Date("2022-12-07"),
+  },
+  {
+    imgSrc:
+      "https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    day: "9",
+    Month: "Jan",
+    category: "EI-DEX THOUGHTS",
+    title: "Brainstorming Session",
+    subTitle: "IES IEDC",
+    description:
+      "The enhancement of teamwork through developing innovative concepts is a highlight of brainstorming sessions.",
+    date: "2022-11-07",
+    dateFormated: new Date("2022-12-07"),
+  },
+  {
+    imgSrc:
+      "https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    day: "9",
+    Month: "Jan",
+    category: "EI-DEX THOUGHTS",
+    title: "Brainstorming Session",
+    subTitle: "IES IEDC",
+    description:
+      "The enhancement of teamwork through developing innovative concepts is a highlight of brainstorming sessions.",
+    date: "2022-11-07",
+    dateFormated: new Date("2022-12-07"),
+  },
+];
+export default function PortfolioGrid() {
+  const [events, setEvents] = useState([]);
+  useEffect(() => {
+    const fetchEvent = async () => {
+      const response = await axios.get(`${process.env.SERVER_URL}/api/event`);
+      setEvents(response.data);
+    };
+    fetchEvent();
+  }, []);
 
-  const DATA = [
-    {
-      imgSrc : "https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      day:"30",
-      Month:"Dec",
-      category:"Orientation",
-      title:"IEDC Orientation Program",
-      subTitle:"Mr. Akhil Madhav",
-      description:" Building upon existing ideas, not only saves time but accelerates phases of deployment, benefitting the growth of a startup.",
-      date:"2021-12-30",
-      dateFormated: new Date('2021-12-30'),
-    },
-    {
-      imgSrc : "https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      day:"8",
-      Month:"Oct",
-      category:"EI-DEX TALKS",
-      title:"The Journey of TinkerHub",
-      subTitle:"Mr. Moosa Mehar M P",
-      description:"Live now @ https://youtu.be/tUlKFSkq0R0",
-      date:"2021-12-30",
-      dateFormated: new Date('2021-12-30'),
-    },
-    {
-      imgSrc : "https://iesdevs.github.io/iedc/images/poster.jpg",
-      day:"4",
-      Month:"Nov",
-      category:"Orientation",
-      title:"IEDC Orientation Program",
-      subTitle:"Mr. Pranav P",
-      description:"IEDC orientation program was conducted for S3 2021 batch students",
-      date:"2022-11-04",
-      dateFormated: new Date('2022-11-04'),
-    },
-    {
-      imgSrc : "https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      day:"7 & 8",
-      Month:"Nov",
-      category:"EI-DEX START-UP BOOTCAMP'22 PROGRAM",
-      title:"EI-DEX Start-Up Bootcamp",
-      subTitle:"Mr. Vishnu Nagaraj",
-      description:"EI- DEX Start-Up Bootcamp'22 will be conducted on 7th and 8th of November 2022 at IES College auditorium",
-      date:"2022-11-07",
-      dateFormated: new Date('2022-12-07'),
-    },
-    {
-      imgSrc : "https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      day:"9",
-      Month:"Jan",
-      category:"EI-DEX THOUGHTS",
-      title:"Brainstorming Session",
-      subTitle:"IES IEDC",
-      description:"The enhancement of teamwork through developing innovative concepts is a highlight of brainstorming sessions.",
-      date:"2022-11-07",
-      dateFormated: new Date('2022-12-07'),
-    },
-    {
-      imgSrc : "https://images.unsplash.com/photo-1581650127213-e72e2271ff15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fG1pY3JvcGhvbmVzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      day:"9",
-      Month:"Jan",
-      category:"EI-DEX THOUGHTS",
-      title:"Brainstorming Session",
-      subTitle:"IES IEDC",
-      description:"The enhancement of teamwork through developing innovative concepts is a highlight of brainstorming sessions.",
-      date:"2022-11-07",
-      dateFormated: new Date('2022-12-07'),
-    },
-
-  ]
-
-    return(
-      
-      <section className="page-section" id="portfolio">
-        <div className="container">
-          <div className="text-center">
-            <h2 className="section-heading text-uppercase">Portfolio</h2>
-            <h3 className="section-subheading text-muted">
-              Library of awesomeness by IEDC
-            </h3>
-          </div>
-          <div className="row p-3">
-            <div className="col p-3">
-              <div className="portfolio-item-card">
-                <div className="portfolio-item">
-                  <a
-                    className="portfolio-link"
-                    data-toggle="modal"
-                    href="#portfolioModal1"
-                  >
-                    <div className="portfolio-hover">
-                      <div className="portfolio-hover-content">
-                        <i className="fas fa-info-circle fa-3x"></i>
-                      </div>
-                    </div>
-                    
-                    <Image
-                      className="portfolio-img img-fluid"
-                      src={ideathon}
-                      alt="..."
-                    />
-                  </a>
-                  <div className="portfolio-caption">
-                    <div className="portfolio-caption-heading">Ideathon</div>
-                    <div className="portfolio-caption-subheading text-muted">
-                      Pitching
+  return (
+    <section className="page-section" id="portfolio">
+      <div className="container">
+        <div className="text-center">
+          <h2 className="section-heading text-uppercase">Portfolio</h2>
+          <h3 className="section-subheading text-muted">
+            Library of awesomeness by IEDC
+          </h3>
+        </div>
+        <div className="row p-3">
+          <div className="col p-3">
+            <div className="portfolio-item-card">
+              <div className="portfolio-item">
+                <a
+                  className="portfolio-link"
+                  data-toggle="modal"
+                  href="#portfolioModal1"
+                >
+                  <div className="portfolio-hover">
+                    <div className="portfolio-hover-content">
+                      <i className="fas fa-info-circle fa-3x"></i>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="col p-3">
-              <div className="portfolio-item-card">
-                <div className="portfolio-item">
-                  <a
-                    className="portfolio-link"
-                    data-toggle="modal"
-                    href="#portfolioModal2"
-                  >
-                    <div className="portfolio-hover">
-                      <div className="portfolio-hover-content">
-                        <i className="fas fa-info-circle fa-3x"></i>
-                      </div>
-                    </div>
-                    <Image
-                      className="portfolio-img img-fluid"
-                      src={startup}
-                      alt="..."
-                    />
-                  </a>
-                  <div className="portfolio-caption">
-                    <div className="portfolio-caption-heading">Startups</div>
-                    <div className="portfolio-caption-subheading text-muted">
-                      Ventures
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col p-3">
-              <div className="portfolio-item-card">
-                <div className="portfolio-item">
-                  <a
-                    className="portfolio-link"
-                    data-toggle="modal"
-                    href="#portfolioModal3"
-                  >
-                    <div className="portfolio-hover">
-                      <div className="portfolio-hover-content">
-                        <i className="fas fa-info-circle fa-3x"></i>
-                      </div>
-                    </div>
-                    <Image
-                      className="portfolio-img img-fluid"
-                      src={workshop}
-                      alt="..."
-                    />
-                  </a>
-                  <div className="portfolio-caption">
-                    <div className="portfolio-caption-heading">Workshop</div>
-                    <div className="portfolio-caption-subheading text-muted">
-                      Hands-on
-                    </div>
+
+                  <Image
+                    className="portfolio-img img-fluid"
+                    src={ideathon}
+                    alt="..."
+                  />
+                </a>
+                <div className="portfolio-caption">
+                  <div className="portfolio-caption-heading">Ideathon</div>
+                  <div className="portfolio-caption-subheading text-muted">
+                    Pitching
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="row p-3">
-            <div className="col p-3">
-              <div className="portfolio-item-card">
-                <div className="portfolio-item">
-                  <a
-                    className="portfolio-link"
-                    data-toggle="modal"
-                    href="#portfolioModal4"
-                  >
-                    <div className="portfolio-hover">
-                      <div className="portfolio-hover-content">
-                        <i className="fas fa-info-circle fa-3x"></i>
-                      </div>
-                    </div>
-                    <Image
-                      className="portfolio-img img-fluid"
-                      src={craft}
-                      alt="..."
-                    />
-                  </a>
-                  <div className="portfolio-caption">
-                    <div className="portfolio-caption-heading">Crafts Allies</div>
-                    <div className="portfolio-caption-subheading text-muted">
-                      Handiwork
+          <div className="col p-3">
+            <div className="portfolio-item-card">
+              <div className="portfolio-item">
+                <a
+                  className="portfolio-link"
+                  data-toggle="modal"
+                  href="#portfolioModal2"
+                >
+                  <div className="portfolio-hover">
+                    <div className="portfolio-hover-content">
+                      <i className="fas fa-info-circle fa-3x"></i>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="col p-3">
-              <div className="portfolio-item-card">
-                <div className="portfolio-item">
-                  <a
-                    className="portfolio-link"
-                    data-toggle="modal"
-                    href="#portfolioModal5"
-                  >
-                    <div className="portfolio-hover">
-                      <div className="portfolio-hover-content">
-                        <i className="fas fa-info-circle fa-3x"></i>
-                      </div>
-                    </div>
-                    <Image
-                      className="portfolio-img img-fluid"
-                      src={voice}
-                      alt="..."
-                    />
-                  </a>
-                  <div className="portfolio-caption">
-                    <div className="portfolio-caption-heading">EI-Dex Talks</div>
-                    <div className="portfolio-caption-subheading text-muted">
-                      Sessions
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col p-3">
-              <div className="portfolio-item-card">
-                <div className="portfolio-item">
-                  <a
-                    className="portfolio-link"
-                    data-toggle="modal"
-                    href="#portfolioModal6"
-                  >
-                    <div className="portfolio-hover">
-                      <div className="portfolio-hover-content">
-                        <i className="fas fa-info-circle fa-3x"></i>
-                      </div>
-                    </div>
-                    <Image
-                      className="portfolio-img img-fluid"
-                      src={hall_of_frame}
-                      alt="..."
-                    />
-                  </a>
-                  <div className="portfolio-caption">
-                    <div className="portfolio-caption-heading">Hall of Fame</div>
-                    <div className="portfolio-caption-subheading text-muted">
-                      Achievers
-                    </div>
+                  <Image
+                    className="portfolio-img img-fluid"
+                    src={startup}
+                    alt="..."
+                  />
+                </a>
+                <div className="portfolio-caption">
+                  <div className="portfolio-caption-heading">Startups</div>
+                  <div className="portfolio-caption-subheading text-muted">
+                    Ventures
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div className="col p-3">
+            <div className="portfolio-item-card">
+              <div className="portfolio-item">
+                <a
+                  className="portfolio-link"
+                  data-toggle="modal"
+                  href="#portfolioModal3"
+                >
+                  <div className="portfolio-hover">
+                    <div className="portfolio-hover-content">
+                      <i className="fas fa-info-circle fa-3x"></i>
+                    </div>
+                  </div>
+                  <Image
+                    className="portfolio-img img-fluid"
+                    src={workshop}
+                    alt="..."
+                  />
+                </a>
+                <div className="portfolio-caption">
+                  <div className="portfolio-caption-heading">Workshop</div>
+                  <div className="portfolio-caption-subheading text-muted">
+                    Hands-on
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div className="container my-4">
-            <hr className="hr-text m-5 p-5" data-content="***" />
+        <div className="row p-3">
+          <div className="col p-3">
+            <div className="portfolio-item-card">
+              <div className="portfolio-item">
+                <a
+                  className="portfolio-link"
+                  data-toggle="modal"
+                  href="#portfolioModal4"
+                >
+                  <div className="portfolio-hover">
+                    <div className="portfolio-hover-content">
+                      <i className="fas fa-info-circle fa-3x"></i>
+                    </div>
+                  </div>
+                  <Image
+                    className="portfolio-img img-fluid"
+                    src={craft}
+                    alt="..."
+                  />
+                </a>
+                <div className="portfolio-caption">
+                  <div className="portfolio-caption-heading">Crafts Allies</div>
+                  <div className="portfolio-caption-subheading text-muted">
+                    Handiwork
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col p-3">
+            <div className="portfolio-item-card">
+              <div className="portfolio-item">
+                <a
+                  className="portfolio-link"
+                  data-toggle="modal"
+                  href="#portfolioModal5"
+                >
+                  <div className="portfolio-hover">
+                    <div className="portfolio-hover-content">
+                      <i className="fas fa-info-circle fa-3x"></i>
+                    </div>
+                  </div>
+                  <Image
+                    className="portfolio-img img-fluid"
+                    src={voice}
+                    alt="..."
+                  />
+                </a>
+                <div className="portfolio-caption">
+                  <div className="portfolio-caption-heading">EI-Dex Talks</div>
+                  <div className="portfolio-caption-subheading text-muted">
+                    Sessions
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col p-3">
+            <div className="portfolio-item-card">
+              <div className="portfolio-item">
+                <a
+                  className="portfolio-link"
+                  data-toggle="modal"
+                  href="#portfolioModal6"
+                >
+                  <div className="portfolio-hover">
+                    <div className="portfolio-hover-content">
+                      <i className="fas fa-info-circle fa-3x"></i>
+                    </div>
+                  </div>
+                  <Image
+                    className="portfolio-img img-fluid"
+                    src={hall_of_frame}
+                    alt="..."
+                  />
+                </a>
+                <div className="portfolio-caption">
+                  <div className="portfolio-caption-heading">Hall of Fame</div>
+                  <div className="portfolio-caption-subheading text-muted">
+                    Achievers
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <h3 className="text-center">Events</h3>
+        <div className="container my-4">
+          <hr className="hr-text m-5 p-5" data-content="***" />
 
-            <div
-              id="multi-item-example"
-              className="carousel slide carousel-multi-item"
-              data-ride="carousel"
-            >
-              <ol className="carousel-indicators">
-                <li
-                  data-target="#multi-item-example"
-                  data-slide-to="0"
-                  className="active"
-                ></li>
-                <li data-target="#multi-item-example" data-slide-to="1"></li>
-                <li data-target="#multi-item-example" data-slide-to="2"></li>
-                <li data-target="#multi-item-example" data-slide-to="3"></li>
-              </ol>
+          <h3 className="text-center">Events</h3>
 
+          <div
+            id="multi-item-example"
+            className="carousel slide carousel-multi-item"
+            data-ride="carousel"
+          >
+            <ol className="carousel-indicators">
+              <li
+                data-target="#multi-item-example"
+                data-slide-to="0"
+                className="active"
+              ></li>
+              <li data-target="#multi-item-example" data-slide-to="1"></li>
+              <li data-target="#multi-item-example" data-slide-to="2"></li>
+              <li data-target="#multi-item-example" data-slide-to="3"></li>
+            </ol>
 
-
-              <div className="carousel-inner pb-5" role="listbox">
-
+            <div className="carousel-inner pb-5" role="listbox">
               <div className="carousel-item active">
-                  <div className="row p-3">
-
-                    { DATA.map((item,index)=>{
-                      console.log(item.dateFormated)
-                      return(
-                        <div className="col" key={index}>
-                      <div className="event-card m-3">
-                        <header className="event-card-thumb">
-                          <a href="#">
-                            <img src={item.imgSrc} />
-                          </a>
-                        </header>
-                        <div className="event-card-date">
-                          <span className="event-card-date-day">{item.day}</span>
-                          <br />
-                          <span className="event-card-date-month">{item.Month}</span>
-                        </div>
-                        <div className="event-card-body">
-                          <div className="event-card-category">{item.category}</div>
-                          <h2 className="event-card-title">
-                            {item.title}
-                          </h2>
-                          <div className="event-card-subtitle">
-                            {item.subTitle}
+                <div className="row p-3">
+                  {events.map((item, index) => {
+                    console.log(item.dateFormated);
+                    return (
+                      <div className="col" key={index}>
+                        <div className="event-card m-3">
+                          <header className="event-card-thumb">
+                            <a href="#">
+                              <img src={item.imgUrl} />
+                            </a>
+                          </header>
+                          <div className="event-card-date">
+                            <span className="event-card-date-day">
+                              {item.day}
+                            </span>
+                            <br />
+                            <span className="event-card-date-month">
+                              {item.month}
+                            </span>
                           </div>
-                          <div className="event-card-description">
-                            {item.description}
+                          <div className="event-card-body">
+                            <div className="event-card-category">
+                              {item.category}
+                            </div>
+                            <h2 className="event-card-title">{item.title}</h2>
+                            <div className="event-card-subtitle">
+                              {item.subTitle}
+                            </div>
+                            <div className="event-card-description">
+                              {item.dec}
+                            </div>
                           </div>
+                          <footer className="event-card-footer"></footer>
                         </div>
-                        <footer className="event-card-footer">
-                          
-                        </footer>
                       </div>
-                    </div>
-                      )
-                    })
-                  
-                    }
-{/* 
+                    );
+                  })}
+                  {/* 
                     <div className="col">
                       <div className="event-card m-3">
                         <header className="event-card-thumb">
@@ -444,12 +456,11 @@ import Image from 'next/image';
                         </footer>
                       </div>
                     </div> */}
-
-                  </div>
                 </div>
               </div>
+            </div>
 
-              {/* <div className="carousel-inner pb-5" role="listbox">
+            {/* <div className="carousel-inner pb-5" role="listbox">
 
                 <div className="carousel-item active">
                   <div className="row p-3">
@@ -800,15 +811,11 @@ import Image from 'next/image';
                   </div>
                 </div> 
               </div>*/}
-
-
-
-
-
-            </div>
           </div>
         </div>
-      </section>
-      
-    )
- }
+      </div>
+    </section>
+  );
+}
+
+
