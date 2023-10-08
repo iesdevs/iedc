@@ -24,8 +24,13 @@ import Team from "./components/Team";
 import Client from "./components/Client";
 import Contact from "./components/Contacts";
 import Footer from "./components/Footer";
+import { useEffect } from "react";
 
 export default function Home(){
+  useEffect(() => {
+    console.log("env load",process.env.NEXT_PUBLIC_SERVER_URL)
+  }, [])
+  
   return(
     <div>
       <Navbar />

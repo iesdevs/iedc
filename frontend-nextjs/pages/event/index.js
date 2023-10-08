@@ -12,11 +12,10 @@ const CreateEvent = () => {
   const [category, setCategory] = useState("");
   const [imgUrl, setImgUrl] = useState("");
   const [youtubeLink, setYoutubeLink] = useState("");
-  console.log("env",`${process.env.SERVER_URL}+/api/event`)
 
   useEffect(() => {
     const fetchEvent = async () => {
-      const response = await axios.get(`${process.env.SERVER_URL}/api/event`);
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/event`);
       setEvents(response.data);
     };
     fetchEvent();

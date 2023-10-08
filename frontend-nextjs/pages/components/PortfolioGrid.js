@@ -90,7 +90,7 @@ export default function PortfolioGrid() {
   const [events, setEvents] = useState([]);
   useEffect(() => {
     const fetchEvent = async () => {
-      const response = await axios.get(`${process.env.SERVER_URL}/api/event`);
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/event`);
       setEvents(response.data);
     };
     fetchEvent();
